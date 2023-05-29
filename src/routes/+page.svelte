@@ -1,10 +1,14 @@
-<script type="ts">
+<script lang="ts">
+    import type { PageData } from './$types';
+
     import LandingHeader from "./LandingHeader.svelte";
 	import LinkButton from "./LinkButton.svelte";
 
     import Icon from "svelte-awesome";
     import { faDiscord, faGithub, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
     //import { faDownload } from "@fortawesome/free-solid-svg-icons";
+
+    export let data: PageData;
 </script>
 
 <div class="grow p-2 sm:p-6 mx-auto flex flex-col gap-4 items-center justify-center">
@@ -12,18 +16,27 @@
 
     <nav class="w-full max-w-lg">
         <div class="flex gap-4 items-center justify-around mb-4">
-            <LinkButton href="/discord" cta>
-                <Icon data={faDiscord} scale={1.5} class="mr-2" />
-                Join the Discord server!
-            </LinkButton>
+            <div class="flex gap-4 items-center justify-center">
+                <LinkButton href="/discord" cta>
+                    <Icon data={faDiscord} scale={1.5} class="mr-2" />
+                    Join the Discord server!
+                </LinkButton>
+
+                {#if data.discordPresenceCount}
+                    <div class="discord-presence-count flex flex-col items-center justify-center text-white">
+                        <span class="text-xl font-bold leading-6">{data.discordPresenceCount}</span>
+                        <span class="text-sm leading-3">members online</span>
+                    </div>
+                {/if}
+            </div>
+
             <!--
             <LinkButton href="/tools">
                 <Icon data={faDownload} scale={1} class="mr-2" />
                 Tool downloads 
             </LinkButton>
             -->
-        </div>
-        
+        </div>    
         <div class="flex gap-2 items-center justify-center">
             <LinkButton href="/github">
                 <Icon data={faGithub} scale={1.1} class="mr-1.5" />
@@ -40,3 +53,13 @@
         </div>
     </nav>
 </div>
+
+<style>
+    .discord-presence-count {
+        text-shadow:
+            0 0 16px #00000022,
+            0 0 4px #00000044,
+            0 0 4px #00000044,
+            0 0 2px #00000044;
+    }
+</style>
