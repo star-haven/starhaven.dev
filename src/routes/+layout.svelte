@@ -1,0 +1,50 @@
+<script type="ts">
+	import '../app.postcss';
+    import Diorama from "./Diorama.svelte";
+</script>
+
+<svelte:head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+</svelte:head>
+
+<Diorama />
+
+<div class="min-h-screen flex flex-col">
+    <slot />
+
+    <footer class="p-6 text-sm max-w-prose text-white text-opacity-80">
+        <p>
+            Star Haven is an independent community of fans and is not affiliated with or endorsed by Nintendo or Intelligent Systems.
+            Any mentions of PAPER MARIO is for informational purposes only and does not imply any association with or endorsement by Nintendo.
+            All rights belong to their respective owners.
+        </p>
+        <p class="mt-1">
+            Background rendering by <a href="https://noclip.website">noclip.website</a>, a digital museum of video game levels.
+        </p>
+        <p class="mt-1">
+            Contact: <a href="mailto:admin@starhaven.dev">admin@starhaven.dev</a>
+        </p>
+    </footer>
+</div>
+
+<style>
+    :root {
+        font-family: 'Itim', system-ui, sans-serif;
+    }
+
+    footer {
+        /* Shadow to make white text visible on any background */
+        text-shadow:
+            0 0 16px #00000022,
+            0 0 4px #00000044,
+            0 0 4px #00000044,
+            0 0 2px #00000044;
+    }
+
+    a {
+        color: white;
+        text-decoration: underline;
+    }
+</style>
