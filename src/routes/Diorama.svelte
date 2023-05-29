@@ -9,7 +9,7 @@
         spmChamber: "https://noclip.website/embed.html#spm/he4_11;ShareData=AGRztUgqE)T==nt9LYxz=0,bv5i|~0UbAKcUAz_9Wo+K,UU1zj9gwI]Uqbu3WP",
         ttydMoon: "https://noclip.website/embed.html#ttyd/moo_01;ShareData=AC]xfUfDVHS,n*-8~T}pVJMbgQeE;xUuD3!TzY{mV_|@$T]/$Z8=VSJUwh9TV[",
         starSanctuary: "https://noclip.website/embed.html#pm64/hos_04;ShareData=AF5Ua8&eVa9A(zF94(Xe=GTkn5a4-$UsDrF8(;cFVcyv{UjQM{8fCZh8-1|OUw",
-        yoshiVillage: "https://noclip.website/embed.html#pm64/jan_02;ShareData=ALNtRUW$;hS9J]mUqVEyV9*@&5;mmOUlbI:8fay7VA])(97hZoS-N69Uqy2KVt",
+        //yoshiVillage: "https://noclip.website/embed.html#pm64/jan_02;ShareData=ALNtRUW$;hS9J]mUqVEyV9*@&5;mmOUlbI:8fay7VA])(97hZoS-N69Uqy2KVt",
     }
 
     const visitNumber = persist(writable(-1), createLocalStorage(), "visitNumber")
