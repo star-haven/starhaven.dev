@@ -6,6 +6,11 @@
     // https://geoffrich.net/posts/page-transitions-1/
     import { preparePageTransition } from '$lib/page-transition';
     preparePageTransition();
+
+    // Vercel Web Analytics
+    import { dev } from '$app/environment';
+    import { inject } from '@vercel/analytics';
+    inject({ mode: dev ? 'development' : 'production' });
 </script>
 
 <svelte:head>
