@@ -19,13 +19,15 @@
             <div class="flex gap-4 items-center justify-center">
                 <LinkButton href="/discord" cta>
                     <Icon data={faDiscord} scale={1.5} class="mr-2" />
-                    Join the Discord server!
+                    Join the community!
                 </LinkButton>
 
                 {#if data.discordPresenceCount}
                     <div class="discord-presence-count flex flex-col items-center justify-center text-white">
-                        <span class="text-xl font-bold leading-6">{data.discordPresenceCount}</span>
-                        <span class="text-sm leading-3">members online</span>
+                        <span class="text-2xl font-bold leading-6">
+                            {data.discordPresenceCount.toLocaleString()}
+                        </span>
+                        <span class="text-sm leading-4">members online</span>
                     </div>
                 {/if}
             </div>
