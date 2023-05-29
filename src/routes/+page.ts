@@ -1,7 +1,7 @@
 import type { PageLoad } from './$types';
 
-export const load = (async () => {
-	const data = await fetch('https://discord.com/api/guilds/279322074412089344/widget.json')
+export const load = (async ({ fetch }) => {
+	const data = await fetch('/api/discord/widget.json')
 		.then((res) => res.json())
 		.catch((error) => {
 			console.warn('Error fetching Discord widget data', error);

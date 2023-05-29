@@ -8,8 +8,12 @@
     import { faDiscord, faGithub, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
     //import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
+    import Diorama from './Diorama.svelte';
+
     export let data: PageData;
 </script>
+
+<Diorama />
 
 <div class="grow p-2 sm:p-6 mx-auto flex flex-col gap-4 items-center justify-center">
     <LandingHeader />

@@ -21,8 +21,6 @@
     <meta name="darkreader-lock">
 </svelte:head>
 
-<Diorama />
-
 <div class="min-h-screen flex flex-col">
     <slot />
 
@@ -32,9 +30,9 @@
             Any mentions of PAPER MARIO is for informational purposes only and does not imply any association with or endorsement by Nintendo.
             All rights belong to their respective owners.
         </p>
-        <p class="mt-1">
+        <!--<p class="mt-1">
             Background rendering by <a href="https://noclip.website">noclip.website</a>, a digital museum of video game levels.
-        </p>
+        </p>-->
         <p class="mt-1">
             Contact: <a href="mailto:admin@starhaven.dev">admin@starhaven.dev</a>
         </p>
