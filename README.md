@@ -2,7 +2,7 @@
 
 [starhaven.dev](https://starhaven.dev)
 
-## Roadmap
+## Roadmap
 
 - Add logo and favicon
 - Tool downloads page (Star Rod, Merlon, Origami Wand, etc.)
