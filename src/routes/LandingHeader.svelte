@@ -39,5 +39,17 @@
         text-shadow: 0 0 2px #ffffff44;
 
         line-height: 1.1;
+
+        animation: grow-in 300ms 200ms ease-out;
+        animation-iteration-count: 1;
+    }
+
+    @keyframes grow-in {
+        0% {
+            transform: scale(0.9);
+        }
+        100% {
+            transform: scale(1);
+        }
     }
 </style>
