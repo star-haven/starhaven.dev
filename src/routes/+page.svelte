@@ -17,7 +17,7 @@
     <nav class="w-full max-w-lg">
         <div class="flex gap-4 items-center justify-around mb-4">
             <div class="flex gap-4 items-center justify-center">
-                <LinkButton href="/discord" cta>
+                <LinkButton href="/discord" discordCta>
                     <Icon data={faDiscord} scale={1.5} class="mr-2" />
                     Join the community!
                 </LinkButton>
