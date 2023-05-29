@@ -1,6 +1,11 @@
 <script type="ts">
-	import '../app.postcss';
+	import '../app.css';
+
     import Diorama from "./Diorama.svelte";
+
+    // https://geoffrich.net/posts/page-transitions-1/
+    import { preparePageTransition } from '$lib/page-transition';
+    preparePageTransition();
 </script>
 
 <svelte:head>
@@ -14,7 +19,7 @@
 <div class="min-h-screen flex flex-col">
     <slot />
 
-    <footer class="p-6 text-sm max-w-prose text-white text-opacity-80">
+    <footer class="p-6 text-sm max-w-prose text-white text-opacity-80" style:--tag="footer">
         <p>
             Star Haven is an independent community of fans and is not affiliated with or endorsed by Nintendo or Intelligent Systems.
             Any mentions of PAPER MARIO is for informational purposes only and does not imply any association with or endorsement by Nintendo.
