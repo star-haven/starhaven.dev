@@ -5,15 +5,19 @@
 
 <Breadcrumbs />
 
-<div class="grow self-center flex flex-col items-center gap-16 w-full max-w-xl p-4" id="top">
+<div
+    class="grow self-center flex flex-col items-center gap-16 w-full max-w-xl p-4"
+    id="top"
+>
     <header class="max-w-sm">
-        <h1 class="text-4xl font-semibold"> <!-- todo banner -->
+        <h1 class="text-4xl font-semibold">
+            <!-- todo banner -->
             Games
         </h1>
 
         <p class="mt-2 leading-tight">
-            There are many Paper Mario games!
-            Click on one below to learn about it.
+            There are many Paper Mario games! Click on one below to learn about
+            it.
         </p>
     </header>
 
@@ -21,15 +25,26 @@
         <ol class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {#each games as game}
                 <li>
-                    <a href={game.url} class="w-full h-full flex items-center justify-center game">
+                    <a
+                        href={game.url}
+                        class="w-full h-full flex items-center justify-center game"
+                    >
                         <div style:--tag={game.viewTransitionTag}>
                             <!-- TODO use picture tag -->
-                            <img src={game.boxArtUrl} alt="Box art" class="max-h-60">
+                            <img
+                                src={game.boxArtUrl}
+                                alt="Box art"
+                                class="max-h-60"
+                            />
 
                             <div class="details text-white leading-tight">
                                 <h2 class="text-xl leading-5">{game.name}</h2>
-                                <div class="text-sm mt-2 opacity-80">{game.console}</div>
-                                <div class="text-sm opacity-80">{game.year}</div>
+                                <div class="text-sm mt-2 opacity-80">
+                                    {game.console}
+                                </div>
+                                <div class="text-sm opacity-80">
+                                    {game.year}
+                                </div>
                             </div>
                         </div>
                     </a>
@@ -39,7 +54,10 @@
     </main>
 
     <p class="text-sm text-gray-400">
-        Box art courtesy of <a href="https://gamesdb.launchbox-app.com/" class="hover:underline">LaunchBox Games Database</a>
+        Box art courtesy of <a
+            href="https://gamesdb.launchbox-app.com/"
+            class="hover:underline">LaunchBox Games Database</a
+        >
     </p>
 </div>
 
@@ -52,7 +70,8 @@
     }
 
     .game[href] {
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
             transform: scale(1.03);
         }
 
@@ -76,7 +95,8 @@
         text-shadow: 0 0 4px black;
     }
 
-    .game:hover .details, .game:focus .details {
+    .game:hover .details,
+    .game:focus .details {
         opacity: 1;
     }
 </style>

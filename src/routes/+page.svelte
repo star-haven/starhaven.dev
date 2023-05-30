@@ -1,21 +1,29 @@
 <script lang="ts">
-    import type { PageData } from './$types';
+    import type { PageData } from "./$types";
 
     import LandingHeader from "./LandingHeader.svelte";
-	import LinkButton from "./LinkButton.svelte";
+    import LinkButton from "./LinkButton.svelte";
 
     import Icon from "svelte-awesome";
-    import { faDiscord, faGithub, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
+    import {
+        faDiscord,
+        faGithub,
+        faTwitter,
+        faYoutube,
+    } from "@fortawesome/free-brands-svg-icons";
     import { faBook, faPlay } from "@fortawesome/free-solid-svg-icons";
 
-    import Diorama from './Diorama.svelte';
+    import Diorama from "./Diorama.svelte";
 
     export let data: PageData;
 </script>
 
 <Diorama />
 
-<div class="grow p-2 sm:p-6 mx-auto flex flex-col gap-4 items-center justify-center" id="top">
+<div
+    class="grow p-2 sm:p-6 mx-auto flex flex-col gap-4 items-center justify-center"
+    id="top"
+>
     <LandingHeader />
 
     <nav class="w-full max-w-lg flex flex-col gap-4">
@@ -27,7 +35,9 @@
                 </LinkButton>
 
                 {#if data.discordPresenceCount}
-                    <div class="discord-presence-count flex flex-col items-center justify-center text-white">
+                    <div
+                        class="discord-presence-count flex flex-col items-center justify-center text-white"
+                    >
                         <span class="text-2xl font-bold leading-6">
                             {data.discordPresenceCount.toLocaleString()}
                         </span>
@@ -65,10 +75,7 @@
 
 <style>
     .discord-presence-count {
-        text-shadow:
-            0 0 16px #00000022,
-            0 0 4px #00000044,
-            0 0 4px #00000044,
+        text-shadow: 0 0 16px #00000022, 0 0 4px #00000044, 0 0 4px #00000044,
             0 0 2px #00000044;
     }
 </style>
