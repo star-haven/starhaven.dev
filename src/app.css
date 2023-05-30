@@ -10,7 +10,7 @@
 
 /* Add style:--tag="name" to any element to enable view transitions */
 @media (prefers-reduced-motion: no-preference) {
-	[style*='--tag'] {
-		view-transition-name: var(--tag);
-	}
+    [style*="--tag"] {
+        view-transition-name: var(--tag);
+    }
 }

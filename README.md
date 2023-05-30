@@ -4,11 +4,11 @@
 
 ## Roadmap
 
-- Add logo and favicon
-- Tool downloads page (Star Rod, Merlon, Origami Wand, etc.)
-- Sign in with Discord and itch.io
-- MediaWiki subdomain
-- itch.io integration i.e. mod pages, including web patcher
+-   Add logo and favicon
+-   Tool downloads page (Star Rod, Merlon, Origami Wand, etc.)
+-   Sign in with Discord and itch.io
+-   MediaWiki subdomain
+-   itch.io integration i.e. mod pages, including web patcher
 
 ## Developing
 

@@ -1,11 +1,17 @@
-<nav aria-label="Breadcrumb" class="leading-tight px-1" style:--tag="breadcrumbs">
+<nav
+    aria-label="Breadcrumb"
+    class="leading-tight px-1"
+    style:--tag="breadcrumbs"
+>
     <ol>
         <li class="inline-block p-2">
             <a href="/">Star Haven</a>
         </li>
         <!-- TODO: calculate this dynamically -->
         <li class="inline-block p-2">
-            <a href="#top" aria-current="page" class="text-black font-semibold">Games</a>
+            <a href="#top" aria-current="page" class="text-black font-semibold"
+                >Games</a
+            >
         </li>
     </ol>
 </nav>
