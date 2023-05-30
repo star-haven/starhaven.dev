@@ -1,5 +1,5 @@
 <svelte:head>
-    <title>How to play</title>
+    <title>Games</title>
 </svelte:head>
 
 <slot />
