@@ -6,7 +6,7 @@
 
     import Icon from "svelte-awesome";
     import { faDiscord, faGithub, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
-    import { faPlay } from "@fortawesome/free-solid-svg-icons";
+    import { faBook, faPlay } from "@fortawesome/free-solid-svg-icons";
 
     import Diorama from './Diorama.svelte';
 
@@ -40,6 +40,10 @@
             <LinkButton href="/games">
                 <Icon data={faPlay} scale={1} class="mr-2" />
                 Games
+            </LinkButton>
+            <LinkButton href="/wiki">
+                <Icon data={faBook} scale={1} class="mr-2" />
+                Wiki
             </LinkButton>
         </div>
         <div class="flex gap-2 items-center justify-center">
