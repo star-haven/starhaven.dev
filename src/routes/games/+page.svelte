@@ -63,20 +63,19 @@
 
 <style>
     .game {
-        transform: scale(1);
-        transition: transform 100ms cubic-bezier(0.165, 0.84, 0.44, 1);
-
         position: relative;
-    }
 
-    .game[href] {
-        &:hover,
-        &:focus {
-            transform: scale(1.03);
+        img {
+            --base-transform: perspective(1000px);
+            transform: var(--base-transform);
+            transition: transform 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
         }
 
-        &:active {
-            transform: scale(1.01) translateY(0.5px);
+        &:hover,
+        &:focus {
+            &[href] img {
+                transform: var(--base-transform) rotate3d(0, 1, 0, 30deg) translate3d(0, 0, 5px);
+            }
         }
     }
 
