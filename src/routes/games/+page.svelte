@@ -18,7 +18,7 @@
     </header>
 
     <main class="self-stretch">
-        <ol class="grid grid-cols-3 gap-4">
+        <ol class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {#each games as game}
                 <li>
                     <a href={game.url} class="w-full h-full flex items-center justify-center game">
