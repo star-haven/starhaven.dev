@@ -6,7 +6,7 @@
 
     import Icon from "svelte-awesome";
     import { faDiscord, faGithub, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
-    //import { faDownload } from "@fortawesome/free-solid-svg-icons";
+    import { faPlay } from "@fortawesome/free-solid-svg-icons";
 
     import Diorama from './Diorama.svelte';
 
@@ -15,11 +15,11 @@
 
 <Diorama />
 
-<div class="grow p-2 sm:p-6 mx-auto flex flex-col gap-4 items-center justify-center">
+<div class="grow p-2 sm:p-6 mx-auto flex flex-col gap-4 items-center justify-center" id="top">
     <LandingHeader />
 
-    <nav class="w-full max-w-lg">
-        <div class="flex gap-4 items-center justify-around mb-4">
+    <nav class="w-full max-w-lg flex flex-col gap-4">
+        <div class="flex gap-4 items-center justify-around">
             <div class="flex gap-4 items-center justify-center">
                 <LinkButton href="/discord" discordCta>
                     <Icon data={faDiscord} scale={1.5} class="mr-2" />
@@ -35,14 +35,13 @@
                     </div>
                 {/if}
             </div>
-
-            <!--
-            <LinkButton href="/tools">
-                <Icon data={faDownload} scale={1} class="mr-2" />
-                Tool downloads 
+        </div>
+        <div class="flex gap-2 items-center justify-center">
+            <LinkButton href="/games">
+                <Icon data={faPlay} scale={1} class="mr-2" />
+                Games
             </LinkButton>
-            -->
-        </div>    
+        </div>
         <div class="flex gap-2 items-center justify-center">
             <LinkButton href="/github">
                 <Icon data={faGithub} scale={1.1} class="mr-1.5" />

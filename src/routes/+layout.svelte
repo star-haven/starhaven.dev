@@ -21,10 +21,12 @@
     <meta name="darkreader-lock">
 </svelte:head>
 
-<div class="min-h-screen flex flex-col">
+<a href="#top" class="sr-only focus:not-sr-only">Skip to content</a>
+
+<div class="min-h-screen flex flex-col text-gray-700">
     <slot />
 
-    <footer class="p-6 text-sm max-w-prose text-white text-opacity-80" style:--tag="footer">
+    <footer class="p-6 text-sm max-w-prose" style:--tag="footer">
         <p>
             Star Haven is an independent community of fans and is not affiliated with or endorsed by Nintendo or Intelligent Systems.
             Any mentions of PAPER MARIO is for informational purposes only and does not imply any association with or endorsement by Nintendo.
@@ -47,14 +49,14 @@
     footer {
         /* Shadow to make white text visible on any background */
         text-shadow:
-            0 0 16px #00000022,
+            0 0 16px #ffffff66,
             0 0 4px #00000044,
             0 0 4px #00000044,
-            0 0 2px #00000044;
+            0 0 2px #ffffff44;
     }
 
     a {
-        color: white;
+        color: black;
         text-decoration: underline;
     }
 </style>
