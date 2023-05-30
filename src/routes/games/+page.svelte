@@ -6,7 +6,7 @@
 <Breadcrumbs />
 
 <div
-    class="grow self-center flex flex-col items-center gap-16 w-full max-w-xl p-4"
+    class="flex w-full max-w-xl grow flex-col items-center gap-16 self-center p-4"
     id="top"
 >
     <header class="max-w-sm">
@@ -22,12 +22,12 @@
     </header>
 
     <main class="self-stretch">
-        <ol class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <ol class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
             {#each games as game}
                 <li>
                     <a
                         href={game.url}
-                        class="w-full h-full flex items-center justify-center game"
+                        class="game flex h-full w-full items-center justify-center"
                     >
                         <div style:--tag={game.viewTransitionTag}>
                             <!-- TODO use picture tag -->
@@ -37,9 +37,9 @@
                                 class="max-h-60"
                             />
 
-                            <div class="details text-white leading-tight">
+                            <div class="details leading-tight text-white">
                                 <h2 class="text-xl leading-5">{game.name}</h2>
-                                <div class="text-sm mt-2 opacity-80">
+                                <div class="mt-2 text-sm opacity-80">
                                     {game.console}
                                 </div>
                                 <div class="text-sm opacity-80">

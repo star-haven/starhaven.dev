@@ -4,8 +4,8 @@
 </script>
 
 <a
-    {href}
-    class="button text-lg text-white bg-gray-700 hover:bg-gray-600 px-5 py-1 shadow-lg rounded-md select-none inline-flex align-center items-center"
+    href={href}
+    class="button align-center inline-flex select-none items-center rounded-md bg-gray-700 px-5 py-1 text-lg text-white shadow-lg hover:bg-gray-600"
     class:cta={discordCta}
     class:text-2xl={discordCta}
 >
