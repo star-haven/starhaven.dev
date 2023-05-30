@@ -66,7 +66,7 @@
         position: relative;
 
         img {
-            --base-transform: perspective(1000px);
+            --base-transform: perspective(500px);
             transform: var(--base-transform);
             transition: transform 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
         }
@@ -74,7 +74,7 @@
         &:hover,
         &:focus {
             &[href] img {
-                transform: var(--base-transform) rotate3d(0, 1, 0, 30deg) translate3d(0, 0, 5px);
+                transform: var(--base-transform) rotate3d(0, 1, 0, 10deg) translate3d(0, 0, 20px);
             }
         }
     }
