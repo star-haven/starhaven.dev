@@ -55,6 +55,10 @@
                 <Icon data={faBook} scale={1} class="mr-2" />
                 Wiki
             </LinkButton>
+			<LinkButton href="/mods">
+				<Icon data={faBook} scale={1} class="mr-2" />
+				Mods
+			</LinkButton>
         </div>
         <div class="flex gap-2 items-center justify-center">
             <LinkButton href="/github">
