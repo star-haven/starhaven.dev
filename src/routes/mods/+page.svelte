@@ -1,6 +1,8 @@
 <script lang="ts">
     import Breadcrumbs from "$lib/components/Breadcrumbs.svelte";
-    
+
+    let showSignInButton = false;
+
     const mods = [
         {
             name: "Paper Mario: Master Quest",
@@ -14,6 +16,10 @@
             link: "#",
         },
     ];
+
+    function signIn() {
+        window.location.href = 'https://starhaven.dev/login';
+    }
 </script>
 
 <Breadcrumbs />
@@ -24,7 +30,6 @@
 >
     <header class="max-w-sm">
         <h1 class="text-4xl font-semibold">
-            <!-- todo banner -->
             Mods
         </h1>
 
@@ -38,12 +43,20 @@
         <ul class="mod-list">
             {#each mods as mod (mod.name)}
                 <li class="mod-list-item">
-                    <div class="mod-name"><a href={mod.link}>{mod.name}</a></div>
+                    <div class="mod-name">
+                        <a href={mod.link}>{mod.name}</a>
+                    </div>
                     <div class="mod-description">{mod.description}</div>
                 </li>
             {/each}
         </ul>
     </main>
+
+    <div class="user-icon" on:click={() => showSignInButton = true}></div>
+
+    {#if showSignInButton}
+        <button class="sign-in-button" on:click={signIn}>Sign In</button>
+    {/if}
 </div>
 
 <style>
@@ -78,5 +91,25 @@
 
     .mod-description {
         color: #666;
+    }
+
+    .user-icon {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-image: url(https://cdn.discordapp.com/attachments/864662712088657960/1113501659398684692/guest.png);
+        background-size: cover;
+        background-position: center;
+        cursor: pointer;
+        border: 2px solid black;
+    }
+
+    .sign-in-button {
+        position: fixed;
+        top: 80px;
+        right: 20px;
     }
 </style>
