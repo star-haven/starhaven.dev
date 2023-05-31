@@ -1,5 +1,5 @@
 <svelte:head>
-    <title>Games</title>
+    <title>Mods</title>
 </svelte:head>
 
 <slot />
