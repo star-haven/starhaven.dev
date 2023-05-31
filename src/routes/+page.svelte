@@ -21,14 +21,14 @@
 <Diorama />
 
 <div
-    class="grow p-2 sm:p-6 mx-auto flex flex-col gap-4 items-center justify-center"
+    class="mx-auto flex grow flex-col items-center justify-center gap-4 p-2 sm:p-6"
     id="top"
 >
     <LandingHeader />
 
-    <nav class="w-full max-w-lg flex flex-col gap-4">
-        <div class="flex gap-4 items-center justify-around">
-            <div class="flex gap-4 items-center justify-center">
+    <nav class="flex w-full max-w-lg flex-col gap-4">
+        <div class="flex items-center justify-around gap-4">
+            <div class="flex items-center justify-center gap-4">
                 <LinkButton href="/discord" discordCta>
                     <Icon data={faDiscord} scale={1.5} class="mr-2" />
                     Join the community!
@@ -46,7 +46,7 @@
                 {/if}
             </div>
         </div>
-        <div class="flex gap-2 items-center justify-center">
+        <div class="flex items-center justify-center gap-2">
             <LinkButton href="/games">
                 <Icon data={faPlay} scale={1} class="mr-2" />
                 Games
@@ -60,7 +60,7 @@
 				Mods
 			</LinkButton>
         </div>
-        <div class="flex gap-2 items-center justify-center">
+        <div class="flex items-center justify-center gap-2">
             <LinkButton href="/github">
                 <Icon data={faGithub} scale={1.1} class="mr-1.5" />
                 GitHub

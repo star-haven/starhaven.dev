@@ -1,8 +1,6 @@
 <script type="ts">
     import "../app.css";
 
-    import Diorama from "./Diorama.svelte";
-
     // https://geoffrich.net/posts/page-transitions-1/
     import { preparePageTransition } from "$lib/page-transition";
     preparePageTransition();
@@ -26,10 +24,10 @@
 
 <a href="#top" class="sr-only focus:not-sr-only">Skip to content</a>
 
-<div class="min-h-screen flex flex-col text-gray-700">
+<div class="flex min-h-screen flex-col text-gray-700">
     <slot />
 
-    <footer class="p-6 text-sm max-w-prose" style:--tag="footer">
+    <footer class="max-w-prose p-6 text-sm" style:--tag="footer">
         <p>
             Star Haven is an independent community of fans and is not affiliated
             with or endorsed by Nintendo or Intelligent Systems. Any mentions of
@@ -41,8 +39,9 @@
             Background rendering by <a href="https://noclip.website">noclip.website</a>, a digital museum of video game levels.
         </p>-->
         <p class="mt-1">
-            Contact: <a href="mailto:admin@starhaven.dev">admin@starhaven.dev</a
-            >
+            Contact: <a href="mailto:admin@starhaven.dev">
+                admin@starhaven.dev
+            </a>
         </p>
     </footer>
 </div>

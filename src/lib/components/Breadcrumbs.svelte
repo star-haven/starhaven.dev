@@ -1,6 +1,6 @@
 <nav
     aria-label="Breadcrumb"
-    class="leading-tight px-1"
+    class="px-1 leading-tight"
     style:--tag="breadcrumbs"
 >
     <ol>
@@ -9,7 +9,7 @@
         </li>
         <!-- TODO: calculate this dynamically -->
         <li class="inline-block p-2">
-            <a href="#top" aria-current="page" class="text-black font-semibold"
+            <a href="#top" aria-current="page" class="font-semibold text-black"
                 >Games</a
             >
         </li>

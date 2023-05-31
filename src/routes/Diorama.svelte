@@ -45,7 +45,7 @@
     <iframe
         title="Diorama"
         src={noclipLink}
-        class="w-full h-full"
+        class="h-full w-full"
         allowtransparency
         allowfullscreen
     />

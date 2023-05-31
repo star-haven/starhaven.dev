@@ -1,6 +1,6 @@
-<header class="p-4 flex align-center items-center">
+<header class="align-center flex items-center p-4">
     <div class="max-w-2xl">
-        <div class="flex justify-center items-center gap-2 text-white">
+        <div class="flex items-center justify-center gap-2 text-white">
             <!--
             <img
                 src="http://placekitten.com/200/200"
@@ -9,7 +9,7 @@
             >
             -->
             <!-- TODO: Replace with actual logo and better alt text -->
-            <h1 id="name" class="text-6xl sm:text-7xl lg:text-8xl font-bold lg">
+            <h1 id="name" class="lg text-6xl font-bold sm:text-7xl lg:text-8xl">
                 <!-- Welcome to? -->
                 Star Haven
             </h1>
@@ -17,7 +17,7 @@
 
         <p
             id="description"
-            class="my-4 mx-10 p-6 pb-9 text-center text-lg sm:text-xl md:text-2xl"
+            class="mx-10 my-4 p-6 pb-9 text-center text-lg sm:text-xl md:text-2xl"
         >
             <!-- inline-block to break lines nicely -->
             <span class="sm:inline-block"

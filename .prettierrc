@@ -4,5 +4,9 @@
     "arrowParens": "always",
     "bracketSpacing": true,
     "semi": true,
-    "trailingComma": "all"
+    "trailingComma": "all",
+    "svelteSortOrder": "scripts-markup-styles",
+    "svelteBracketNewLine": false,
+    "svelteAllowShorthand": false,
+    "plugins": ["prettier-plugin-svelte", "prettier-plugin-tailwindcss"]
 }
