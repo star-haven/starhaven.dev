@@ -6,7 +6,7 @@
 <Breadcrumbs />
 
 <div
-    class="flex w-full max-w-xl grow flex-col items-center gap-16 self-center p-4"
+    class="flex w-full max-w-6xl grow flex-col items-center gap-16 self-center p-4"
     id="top"
 >
     <header class="max-w-sm">
@@ -16,35 +16,32 @@
         </h1>
 
         <p class="mt-2 leading-tight">
-            There are many Paper Mario games! Click on one below to learn about
-            it.
         </p>
     </header>
 
     <main class="self-stretch">
-        <ol class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+        <ol class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-3">
             {#each games as game}
                 <li>
                     <a
                         href={game.url}
-                        class="game flex h-full w-full items-center justify-center"
+                        class="game flex flex-col h-full w-full items-center justify-center hover:underline"
+                        style:--tag={game.viewTransitionTag}
                     >
-                        <div style:--tag={game.viewTransitionTag}>
-                            <!-- TODO use picture tag -->
-                            <img
-                                src={game.boxArtUrl}
-                                alt="Box art"
-                                class="max-h-60"
-                            />
+                        <!-- TODO use picture tag -->
+                        <img
+                            src={game.boxArtUrl}
+                            alt="Box art"
+                            class="max-h-60"
+                        />
 
-                            <div class="details leading-tight text-white">
-                                <h2 class="text-xl leading-5">{game.name}</h2>
-                                <div class="mt-2 text-sm opacity-80">
-                                    {game.console}
-                                </div>
-                                <div class="text-sm opacity-80">
-                                    {game.year}
-                                </div>
+                        <div class="text-center leading-tight mt-6">
+                            <h2 class="text-2xl leading-5">{game.name}</h2>
+                            <div class="mt-2 text-sm opacity-80">
+                                {game.console}
+                            </div>
+                            <div class="text-sm opacity-80">
+                                {game.year}
                             </div>
                         </div>
                     </a>
@@ -65,37 +62,19 @@
     .game {
         position: relative;
 
+        text-wrap: balance;
+
         img {
-            --base-transform: perspective(500px);
-            transform: var(--base-transform);
+            /*--base-transform: perspective(500px);
+            transform: var(--base-transform);*/
             transition: transform 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
         }
 
         &:hover,
         &:focus {
             &[href] img {
-                transform: var(--base-transform) rotate3d(0, 1, 0, 10deg) translate3d(0, 0, 20px);
+                /*transform: var(--base-transform) rotate3d(0, 1, 0, 5deg) translate3d(50%, 0, 60%);*/
             }
         }
-    }
-
-    .details {
-        opacity: 0;
-        transition: opacity 100ms ease-out;
-
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
-        width: 80%;
-        text-align: center;
-
-        text-shadow: 0 0 4px black;
-    }
-
-    .game:hover .details,
-    .game:focus .details {
-        opacity: 1;
     }
 </style>
