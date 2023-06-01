@@ -1,24 +1,26 @@
 <script lang="ts">
-    import type { PageData } from "./$types";
+	import type { PageData } from "./$types";
 
-    import LandingHeader from "./LandingHeader.svelte";
-    import LinkButton from "./LinkButton.svelte";
+	import LandingHeader from "./LandingHeader.svelte";
+	import LinkButton from "./LinkButton.svelte";
+	import Signin from '$lib/components/Signin.svelte';
+	import Icon from "svelte-awesome";
+	import {
+	faDiscord,
+	faGithub,
+	faTwitter,
+	faYoutube,
+	} from "@fortawesome/free-brands-svg-icons";
+	import { faBook, faPlay } from "@fortawesome/free-solid-svg-icons";
 
-    import Icon from "svelte-awesome";
-    import {
-        faDiscord,
-        faGithub,
-        faTwitter,
-        faYoutube,
-    } from "@fortawesome/free-brands-svg-icons";
-    import { faBook, faPlay } from "@fortawesome/free-solid-svg-icons";
+	import Diorama from "./Diorama.svelte";
 
-    import Diorama from "./Diorama.svelte";
-
-    export let data: PageData;
+	export let data: PageData;
 </script>
 
 <Diorama />
+
+<Signin />
 
 <div
     class="mx-auto flex grow flex-col items-center justify-center gap-4 p-2 sm:p-6"
