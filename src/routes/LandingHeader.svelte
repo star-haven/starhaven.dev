@@ -1,17 +1,12 @@
+<script lang="ts">
+    import logotype from "./starHavenLogotype.png";
+</script>
+
 <header class="align-center flex items-center p-4">
     <div class="max-w-2xl">
         <div class="flex items-center justify-center gap-2 text-white">
-            <!--
-            <img
-                src="http://placekitten.com/200/200"
-                alt="Star Haven logo"
-                class="w-24 h-24 sm:w-32 sm:h-32"
-            >
-            -->
-            <!-- TODO: Replace with actual logo and better alt text -->
             <h1 id="name" class="lg text-6xl font-bold sm:text-7xl lg:text-8xl">
-                <!-- Welcome to? -->
-                Star Haven
+                <img src={logotype} alt="Star Haven" />
             </h1>
         </div>
 
