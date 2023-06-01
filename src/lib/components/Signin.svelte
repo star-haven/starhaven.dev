@@ -1,5 +1,6 @@
 <script lang="ts">
     import { page } from "$app/stores";
+    import Button from "./Button.svelte";
 
     let showSignOutButton = false;
 
@@ -21,7 +22,9 @@
         />
     {/if}
 {:else}
-    <div class="signin-button" on:click={signIn}>Sign In</div>
+    <nav aria-label="Session" class="self-end p-3"> <!-- TODO: user-icon should be in this element too -->
+        <Button on:click={signIn}>Sign in</Button>
+    </nav>
 {/if}
 
 {#if showSignOutButton}
