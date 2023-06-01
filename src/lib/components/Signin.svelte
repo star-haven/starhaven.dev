@@ -1,10 +1,9 @@
-
 <script lang="ts">
-  import { page } from "$app/stores";
+    import { page } from "$app/stores";
 
-  let showSignOutButton = false;
+    let showSignOutButton = false;
 
-   function signIn() {
+    function signIn() {
         window.location.href = "/auth/signin";
     }
 
@@ -14,29 +13,25 @@
 </script>
 
 {#if $page.data.session}
-        {#if $page.data.session.user?.image}
-            <div
-                class="user-icon"
-                style="background-image: url('{$page.data.session.user
-                    .image}');"
-                on:click={() => (showSignOutButton = true)}
-            />
-        {/if}
-    {:else}
-
-<div class="signin-button" on:click={signIn}>
-    Sign In
-</div>
+    {#if $page.data.session.user?.image}
+        <div
+            class="user-icon"
+            style="background-image: url('{$page.data.session.user.image}');"
+            on:click={() => (showSignOutButton = true)}
+        />
+    {/if}
+{:else}
+    <div class="signin-button" on:click={signIn}>Sign In</div>
 {/if}
 
 {#if showSignOutButton}
-        {#if $page.data.session}
-            <button class="sign-out-button" on:click={signOut}>Sign out</button>
+    {#if $page.data.session}
+        <button class="sign-out-button" on:click={signOut}>Sign out</button>
     {/if}
-    {/if}
+{/if}
 
 <style>
-.user-icon {
+    .user-icon {
         position: fixed;
         top: 20px;
         right: 20px;
