@@ -16,6 +16,7 @@ async function setup() {
         //console.log(response);
         user.set(response);
     } catch (error) {
+        console.log("There was an error:")
         console.log(error);
     }
 }

@@ -47,21 +47,4 @@
         justify-content: center;
     }
 
-    label {
-        display: block;
-        margin-bottom: 5px;
-        color: #333;
-    }
-
-    input {
-        width: 100%;
-        padding: 10px;
-        box-sizing: border-box;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-    }
-
-    .svelte-awesome {
-        color: #7289da;
-    }
 </style>

@@ -1,5 +1,5 @@
 <svelte:head>
-    <title>Mods</title>
+    <title>login</title>
 </svelte:head>
 
 <slot />
