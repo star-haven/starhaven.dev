@@ -1,13 +1,13 @@
 <!-- TODO: make LinkButton similar -->
 
 <script lang="ts">
-    import { createEventDispatcher } from 'svelte';
+    import { createEventDispatcher } from "svelte";
 
-	const dispatch = createEventDispatcher<{ click: {} }>();
+    const dispatch = createEventDispatcher<{ click: {} }>();
 </script>
 
 <button
-    on:click={() => dispatch('click')}
+    on:click={() => dispatch("click")}
     class="button align-center inline-flex select-none items-center rounded-md bg-gray-700 px-5 py-1 text-lg text-white shadow-lg hover:bg-gray-600"
 >
     <slot />

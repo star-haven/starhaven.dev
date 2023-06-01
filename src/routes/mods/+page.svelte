@@ -1,8 +1,8 @@
 <script lang="ts">
 	import Breadcrumbs from "$lib/components/Breadcrumbs.svelte";
 	import { page } from "$app/stores";
+	import SignIn from "$lib/components/SignIn.svelte";
 	let showSignInButton = false;
-	import Signin from "$lib/components/Signin.svelte";
 	const mods = [
 	{
 	name: "Paper Mario: Master Quest",
@@ -26,7 +26,7 @@
 </script>
 
 <Breadcrumbs />
-<Signin />
+<SignIn />
 
 <div
     class="flex w-full max-w-xl grow flex-col items-center gap-16 self-center p-4"
@@ -53,7 +53,6 @@
             {/each}
         </ul>
     </main>
-
 </div>
 
 <style>

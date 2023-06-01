@@ -1,11 +1,11 @@
 <script lang="ts">
-	import { arr as games } from "./games";
-	import Breadcrumbs from "$lib/components/Breadcrumbs.svelte";
-	import Signin from "$lib/components/Signin.svelte";
+    import { arr as games } from "./games";
+    import Breadcrumbs from "$lib/components/Breadcrumbs.svelte";
+    import SignIn from "$lib/components/SignIn.svelte";
 </script>
 
 <Breadcrumbs />
-<Signin />
+<SignIn />
 <div
     class="flex w-full max-w-6xl grow flex-col items-center gap-16 self-center p-4"
     id="top"

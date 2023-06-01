@@ -22,7 +22,8 @@
         />
     {/if}
 {:else}
-    <nav aria-label="Session" class="self-end p-3"> <!-- TODO: user-icon should be in this element too -->
+    <nav aria-label="Session" class="self-end p-3">
+        <!-- TODO: user-icon should be in this element too -->
         <Button on:click={signIn}>Sign in</Button>
     </nav>
 {/if}

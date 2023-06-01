@@ -20,7 +20,8 @@ export const handle: Handle = sequence(
         providers: [
             Discord({
                 clientId: process.env.DISCORD_CLIENT_ID || DISCORD_CLIENT_ID,
-                clientSecret: process.env.DISCORD_CLIENT_SECRET || DISCORD_CLIENT_SECRET,
+                clientSecret:
+                    process.env.DISCORD_CLIENT_SECRET || DISCORD_CLIENT_SECRET,
             }),
         ],
     }),
