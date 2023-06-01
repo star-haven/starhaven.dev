@@ -14,12 +14,14 @@ async function authorization({ event, resolve }) {
     return resolve(event);
 }
 
-export const handle: Handle = sequence(SvelteKitAuth({
-    providers: [
-        Discord({
-            clientId: "1113277158543073381",
-            clientSecret: process.env.DISCORD_CLIENT_SECRET,
-        })],
-}),
-    authorization
+export const handle: Handle = sequence(
+    SvelteKitAuth({
+        providers: [
+            Discord({
+                clientId: "1113277158543073381",
+                clientSecret: process.env.DISCORD_CLIENT_SECRET,
+            }),
+        ],
+    }),
+    authorization,
 );
