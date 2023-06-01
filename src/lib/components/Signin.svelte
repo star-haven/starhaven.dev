@@ -30,7 +30,9 @@
 
 {#if showSignOutButton}
     {#if $page.data.session}
-        <button class="sign-out-button" on:click={signOut}>Sign out</button>
+    <nav aria-label="SignOut" class="signout-button">
+        <Button on:click={signOut}>Sign out</Button>
+        </nav>
     {/if}
 {/if}
 
@@ -45,21 +47,11 @@
         background-size: cover;
         background-position: center;
         cursor: pointer;
-        border: 2px solid black;
     }
-    .signin-button {
+    .signout-button {
         position: fixed;
-        top: 10px;
+        top: 90px;
         right: 10px;
-        cursor: pointer;
-        background-color: #444;
-        color: #fff;
-        padding: 10px;
-        border-radius: 5px;
-    }
-    .sign-out-button {
-        position: fixed;
-        top: 80px;
-        right: 20px;
     }
 </style>
+
