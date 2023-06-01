@@ -2,6 +2,7 @@ import { SvelteKitAuth } from "@auth/sveltekit";
 import Discord from "@auth/core/providers/discord";
 import { redirect, type Handle } from "@sveltejs/kit";
 import { sequence } from "@sveltejs/kit/hooks";
+import { DISCORD_CLIENT_ID, DISCORD_CLIENT_SECRET } from "$env/static/private";
 
 async function authorization({ event, resolve }) {
     if (event.url.pathname.startsWith("/authenticated")) {
@@ -18,8 +19,8 @@ export const handle: Handle = sequence(
     SvelteKitAuth({
         providers: [
             Discord({
-                clientId: "1113277158543073381",
-                clientSecret: process.env.DISCORD_CLIENT_SECRET,
+                clientId: process.env.DISCORD_CLIENT_ID || DISCORD_CLIENT_ID,
+                clientSecret: process.env.DISCORD_CLIENT_SECRET || DISCORD_CLIENT_SECRET,
             }),
         ],
     }),
