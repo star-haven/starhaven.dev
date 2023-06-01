@@ -10,7 +10,7 @@
         <h2>Login</h2>
 
         <form on:submit|preventDefault={login} class="login-form">
-            <LinkButton href="https://discord.com/api/oauth2/authorize?client_id=1113277158543073381&redirect_uri=https%3A%2F%2Fstarhaven.dev%2Fauth%2Fdiscord&response_type=code&scope=identify%20email">
+            <LinkButton href="https://discord.com/api/oauth2/authorize?client_id=1113277158543073381&redirect_uri=https%3A%2F%2Fstarhaven.dev%2Fauth%2Fcallback%2Fdiscord&response_type=code&scope=identify%20email">
                 <Icon data={faDiscord} scale={1} class="mr-2" />
                 Sign In
             </LinkButton>
