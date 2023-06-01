@@ -1,8 +1,10 @@
-import { expect, test } from "@playwright/test";
+import { test } from "@playwright/test";
 
-test("index page has expected h1", async ({ page }) => {
+test("sign in", async ({ page }) => {
     await page.goto("/");
-    await expect(
-        page.getByRole("heading", { name: "Welcome to SvelteKit" }),
-    ).toBeVisible();
+    const signInButton = await page.waitForSelector("text=Sign in");
+    await signInButton.click();
+    await page.click("text=Sign in with Discord");
+    await page.click("text=Authorize");
+    await page.waitForSelector("text=Sign out");
 });
