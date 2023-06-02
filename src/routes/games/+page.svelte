@@ -1,7 +1,7 @@
 <script lang="ts">
     import { arr as games } from "./games";
     import Breadcrumbs from "$lib/components/Breadcrumbs.svelte";
-    import SignIn from "$lib/components/SignIn.svelte";
+    import SignIn from "$lib/components/SessionNav.svelte";
 </script>
 
 <Breadcrumbs />

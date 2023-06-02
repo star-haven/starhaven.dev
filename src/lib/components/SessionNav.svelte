@@ -23,7 +23,7 @@
                 <img
                     src="{$page.data.session.user.image}"
                     alt="You"
-                    class="rounded-full"
+                    class="rounded-full w-8 h-8"
                 />
             </a>
         {/if}
@@ -34,8 +34,8 @@
 
 {#if showSignOutButton}
     {#if $page.data.session}
-    <nav aria-label="SignOut" class="signout-button">
-        <Button on:click={signOut}>Sign out</Button>
-    </nav>
+        <nav aria-label="SignOut" class="signout-button">
+            <Button on:click={signOut}>Sign out</Button>
+        </nav>
     {/if}
 {/if}

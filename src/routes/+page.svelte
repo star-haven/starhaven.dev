@@ -3,7 +3,6 @@
 
     import LandingHeader from "./LandingHeader.svelte";
     import LinkButton from "./LinkButton.svelte";
-    import SignIn from "$lib/components/SignIn.svelte";
     import Icon from "svelte-awesome";
     import {
         faDiscord,
@@ -19,8 +18,6 @@
 </script>
 
 <Diorama />
-
-<SignIn />
 
 <div
     class="mx-auto flex grow flex-col items-center justify-center gap-4 p-2 sm:p-6"
