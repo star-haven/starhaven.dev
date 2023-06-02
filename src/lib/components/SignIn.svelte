@@ -13,45 +13,29 @@
     }
 </script>
 
-{#if $page.data.session}
-    {#if $page.data.session.user?.image}
-        <div
-            class="user-icon"
-            style="background-image: url('{$page.data.session.user.image}');"
-            on:click={() => (showSignOutButton = true)}
-        />
-    {/if}
-{:else}
-    <nav aria-label="Session" class="self-end p-3">
-        <!-- TODO: user-icon should be in this element too -->
+<nav aria-label="Session" class="self-end p-3">
+    {#if $page.data.session}
+        {#if $page.data.session.user?.image}
+            <a
+                href="/profile"
+                title="View profile"
+            >
+                <img
+                    src="{$page.data.session.user.image}"
+                    alt="You"
+                    class="rounded-full"
+                />
+            </a>
+        {/if}
+    {:else}
         <Button on:click={signIn}>Sign in</Button>
-    </nav>
-{/if}
+    {/if}
+</nav>
 
 {#if showSignOutButton}
     {#if $page.data.session}
     <nav aria-label="SignOut" class="signout-button">
         <Button on:click={signOut}>Sign out</Button>
-        </nav>
+    </nav>
     {/if}
 {/if}
-
-<style>
-    .user-icon {
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background-size: cover;
-        background-position: center;
-        cursor: pointer;
-    }
-    .signout-button {
-        position: fixed;
-        top: 90px;
-        right: 10px;
-    }
-</style>
-
