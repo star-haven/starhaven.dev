@@ -14,52 +14,21 @@
     });
 </script>
 
-<div class="profile-page">
+<div class="flex flex-col items-center justify-center p-8">
     {#if $page.data.session}
-        <div class="user-info">
+        <div class="flex flex-col items-center">
             <!-- svelte-ignore a11y-img-redundant-alt -->
             <img
-                class="user-image"
+                class="mb-4 h-36 w-36 rounded-full object-cover"
                 src={$page.data.session.user?.image}
                 alt="User image"
             />
-            <h2 class="user-name">{$page.data.session.user?.name}</h2>
+            <h2 class="text-center text-3xl">
+                {$page.data.session.user?.name}
+            </h2>
         </div>
-        <nav aria-label="SignOut" class="signout-button">
+        <nav aria-label="SignOut" class="mt-8">
             <Button on:click={signOut}>Sign out</Button>
         </nav>
     {/if}
 </div>
-
-<style>
-    .profile-page {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 2em;
-    }
-
-    .user-info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .user-image {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin-bottom: 1em;
-    }
-
-    .user-name {
-        font-size: 1.5em;
-        text-align: center;
-    }
-
-    .signout-button {
-        margin-top: 2em;
-    }
-</style>
