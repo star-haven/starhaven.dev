@@ -16,14 +16,11 @@
 <nav aria-label="Session" class="self-end p-3">
     {#if $page.data.session}
         {#if $page.data.session.user?.image}
-            <a
-                href="/profile"
-                title="View profile"
-            >
+            <a href="/profile" title="View profile">
                 <img
-                    src="{$page.data.session.user.image}"
+                    src={$page.data.session.user.image}
                     alt="You"
-                    class="rounded-full w-8 h-8"
+                    class="h-8 w-8 rounded-full"
                 />
             </a>
         {/if}

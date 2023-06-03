@@ -1,10 +1,10 @@
 <script lang="ts">
-	import Breadcrumbs from "$lib/components/Breadcrumbs.svelte";
-	const mods = [
+    import Breadcrumbs from "$lib/components/Breadcrumbs.svelte";
+    const mods = [
         {
             name: "Paper Mario: Master Quest",
             description:
-            'Considered "The Dark Souls of Paper Mario", Master Quest is incredibly difficult. It was designed with elite challenge runners in mind, and unless you have extensive knowledge of Paper Mario, you may struggle with much of the content.',
+                'Considered "The Dark Souls of Paper Mario", Master Quest is incredibly difficult. It was designed with elite challenge runners in mind, and unless you have extensive knowledge of Paper Mario, you may struggle with much of the content.',
             link: "https://github.com/Brotenko/PMMasterQuest",
         },
         {
@@ -12,7 +12,7 @@
             description: "This is a description of Mod 2.",
             link: "#",
         },
-	];
+    ];
 </script>
 
 <Breadcrumbs />
