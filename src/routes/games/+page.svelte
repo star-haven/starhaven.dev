@@ -5,7 +5,6 @@
 </script>
 
 <Breadcrumbs />
-<SignIn />
 <div
     class="flex w-full max-w-6xl grow flex-col items-center gap-16 self-center p-4"
     id="top"
