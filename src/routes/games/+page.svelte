@@ -1,47 +1,42 @@
 <script lang="ts">
     import { arr as games } from "./games";
     import Breadcrumbs from "$lib/components/Breadcrumbs.svelte";
-    import SignIn from "$lib/components/SessionNav.svelte";
 </script>
 
 <Breadcrumbs />
-<div
-    class="flex w-full max-w-6xl grow flex-col items-center gap-16 self-center p-4"
-    id="top"
->
-    <header class="max-w-sm">
-        <h1 class="text-4xl font-semibold">
-            <!-- todo banner -->
+
+<div class="flex flex-col items-center gap-16 p-8 mx-auto max-w-7xl" id="top">
+    <header class="max-w-2xl text-center">
+        <h1 class="text-5xl font-bold text-blue-600">
             Games
         </h1>
 
-        <p class="mt-2 leading-tight" />
+        <p class="mt-4 text-lg text-gray-500" />
     </header>
 
-    <main class="self-stretch">
-        <ol class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-3">
+    <main class="w-full">
+        <ol class="grid grid-cols-1 gap-16 sm:grid-cols-2 lg:grid-cols-3">
             {#each games as game}
                 <li>
                     <a
                         href={game.url}
-                        class="game flex h-full w-full flex-col items-center justify-center hover:underline"
+                        class="game flex flex-col items-start justify-start p-4 bg-white rounded-lg shadow-md hover:underline"
                         style:--tag={game.viewTransitionTag}
                     >
-                        <!-- TODO use picture tag -->
                         <img
                             src={game.boxArtUrl}
                             alt="Box art"
-                            class="max-h-60"
+                            class="w-full h-auto mb-4 rounded-t-lg"
                         />
 
-                        <div class="mt-6 text-center leading-tight">
-                            <h2 class="text-2xl leading-5">{game.name}</h2>
-                            <div class="mt-2 text-sm opacity-80">
+                        <div class="w-full">
+                            <h2 class="text-2xl font-semibold text-gray-800">{game.name}</h2>
+                            <p class="mt-1 text-gray-500">
                                 {game.console}
-                            </div>
-                            <div class="text-sm opacity-80">
+                            </p>
+                            <p class="text-sm text-gray-400">
                                 {game.year}
-                            </div>
+                            </p>
                         </div>
                     </a>
                 </li>
@@ -49,31 +44,26 @@
         </ol>
     </main>
 
-    <p class="text-sm text-gray-400">
-        Box art courtesy of <a
-            href="https://gamesdb.launchbox-app.com/"
-            class="hover:underline">LaunchBox Games Database</a
-        >
+    <p class="mt-6 text-sm text-gray-400">
+        Box art courtesy of <a href="https://gamesdb.launchbox-app.com/" class="hover:text-blue-600">LaunchBox Games Database</a>
     </p>
 </div>
 
 <style>
     .game {
-        position: relative;
+        transition: transform 0.3s ease-in-out;
+    }
 
-        text-wrap: balance;
+    .game:hover {
+        transform: scale(1.05);
+    }
 
-        img {
-            /*--base-transform: perspective(500px);
-            transform: var(--base-transform);*/
-            transition: transform 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
-        }
+    .game img {
+        transition: transform 0.3s ease-in-out;
+        height: 350px;
+    }
 
-        &:hover,
-        &:focus {
-            &[href] img {
-                /*transform: var(--base-transform) rotate3d(0, 1, 0, 5deg) translate3d(50%, 0, 60%);*/
-            }
-        }
+    .game:hover img {
+        transform: scale(1.05);
     }
 </style>
