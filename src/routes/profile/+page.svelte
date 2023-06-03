@@ -1,3 +1,7 @@
+<svelte:head>
+    <title>Profile</title>
+</svelte:head>
+
 <script lang="ts">
     import { onMount } from "svelte";
     import { page } from "$app/stores";
