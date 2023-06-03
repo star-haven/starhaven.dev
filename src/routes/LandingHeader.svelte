@@ -1,5 +1,5 @@
 <script lang="ts">
-    import logotype from "./starHavenLogotype.png";
+    import logotype from "$lib/assets/logotype.png";
 </script>
 
 <header class="align-center flex items-center p-4">
@@ -15,12 +15,12 @@
             class="mx-10 my-4 p-6 pb-9 text-center text-lg sm:text-xl md:text-2xl"
         >
             <!-- inline-block to break lines nicely -->
-            <span class="sm:inline-block"
-                >The community of modders and reverse-engineers</span
-            >
-            <span class="sm:inline-block"
-                >crafting new and exciting Paper Mario experiences!</span
-            >
+            <span class="sm:inline-block">
+                The community of modders and reverse-engineers
+            </span>
+            <span class="sm:inline-block">
+                crafting new and exciting Paper Mario experiences!
+            </span>
         </p>
     </div>
 </header>

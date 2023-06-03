@@ -9,6 +9,8 @@
     import { dev } from "$app/environment";
     import { inject } from "@vercel/analytics";
     inject({ mode: dev ? "development" : "production" });
+
+    import SessionNav from "$lib/components/SessionNav.svelte";
 </script>
 
 <svelte:head>
@@ -25,6 +27,8 @@
 <a href="#top" class="sr-only focus:not-sr-only">Skip to content</a>
 
 <div class="flex min-h-screen flex-col text-gray-700">
+    <SessionNav />
+
     <slot />
 
     <footer class="max-w-prose p-6 text-sm" style:--tag="footer">

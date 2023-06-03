@@ -1,10 +1,11 @@
 <script lang="ts">
     import { arr as games } from "./games";
     import Breadcrumbs from "$lib/components/Breadcrumbs.svelte";
+    import SignIn from "$lib/components/SessionNav.svelte";
 </script>
 
 <Breadcrumbs />
-
+<SignIn />
 <div
     class="flex w-full max-w-6xl grow flex-col items-center gap-16 self-center p-4"
     id="top"
@@ -15,8 +16,7 @@
             Games
         </h1>
 
-        <p class="mt-2 leading-tight">
-        </p>
+        <p class="mt-2 leading-tight" />
     </header>
 
     <main class="self-stretch">
@@ -25,7 +25,7 @@
                 <li>
                     <a
                         href={game.url}
-                        class="game flex flex-col h-full w-full items-center justify-center hover:underline"
+                        class="game flex h-full w-full flex-col items-center justify-center hover:underline"
                         style:--tag={game.viewTransitionTag}
                     >
                         <!-- TODO use picture tag -->
@@ -35,7 +35,7 @@
                             class="max-h-60"
                         />
 
-                        <div class="text-center leading-tight mt-6">
+                        <div class="mt-6 text-center leading-tight">
                             <h2 class="text-2xl leading-5">{game.name}</h2>
                             <div class="mt-2 text-sm opacity-80">
                                 {game.console}
