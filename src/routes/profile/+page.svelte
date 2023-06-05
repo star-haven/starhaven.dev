@@ -1,7 +1,3 @@
-<svelte:head>
-    <title>Profile</title>
-</svelte:head>
-
 <script lang="ts">
     import { onMount } from "svelte";
     import { page } from "$app/stores";
@@ -17,6 +13,10 @@
         }
     });
 </script>
+
+<svelte:head>
+    <title>Profile</title>
+</svelte:head>
 
 <div class="flex flex-col items-center justify-center p-8">
     {#if $page.data.session}
