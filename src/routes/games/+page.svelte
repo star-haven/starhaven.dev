@@ -35,6 +35,10 @@
 </main>
 
 <style>
+    .w-full {
+        padding: 30px;
+    }
+
     .game {
         display: flex;
         flex-direction: column;
@@ -52,7 +56,7 @@
     }
 
     .game img {
-        width: 50%;
+        width: 45%;
         height: auto;
         object-fit: cover;
         border-top-left-radius: 15px;
