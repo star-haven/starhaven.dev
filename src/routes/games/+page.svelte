@@ -35,9 +35,6 @@
 </main>
 
 <style>
-    .w-full {
-        padding: 30px;
-    }
 
     .game {
         display: flex;
