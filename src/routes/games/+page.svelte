@@ -17,7 +17,7 @@
                         class="mb-4 h-auto w-full rounded-t-lg"
                     />
 
-                    <div class="w-full">
+                    <div class="w-full p-4">
                         <h2 class="text-2xl font-semibold text-gray-800">
                             {game.name}
                         </h2>
