@@ -21,6 +21,8 @@
         "@fortawesome/free-solid-svg-icons": "^6.4.0",
         "@macfja/svelte-persistent-store": "^2.3.0",
         "@vercel/analytics": "^1.0.1",
+        "@vercel/postgres": "^0.3.0",
+        "drizzle-orm": "^0.26.5",
         "svelte-awesome": "^3.2.0"
     },
     "devDependencies": {
