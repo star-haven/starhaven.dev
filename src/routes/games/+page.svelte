@@ -31,18 +31,17 @@
             </li>
         {/each}
     </ol>
+    <style>
+        .game img {
+            width: 45%;
+            transform: rotate3d(0, 1, 0, 25deg);
+            transform-origin: 50% 50% 0;
+            transform-style: preserve-3d;
+            transition-duration: 300ms;
+            margin: 0 auto;
+        }
+        .game:hover img {
+            transform: rotate3d(0, 1, 0, 35deg);
+        }
+    </style>
 </main>
-
-<style>
-    .game img {
-        width: 45%;
-        transform: rotate3d(0, 1, 0, 25deg);
-        transform-origin: 50% 50% 0;
-        transform-style: preserve-3d;
-        transition-duration: 300ms;
-        margin: 0 auto;
-    }
-    .game:hover img {
-        transform: rotate3d(0, 1, 0, 35deg);
-    }
-</style>
