@@ -4,3 +4,9 @@ declare module "$lib/assets/*" {
     const meta: Object[];
     export default meta;
 }
+
+// Added to remove warnings from boxArtUrl imports
+declare module "./*" {
+    const meta: Object[];
+    export default meta;
+}
