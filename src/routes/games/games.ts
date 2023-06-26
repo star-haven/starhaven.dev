@@ -1,16 +1,16 @@
-import pm64box from "./pm64/3dbox.webp?run";
-import ttydbox from "./ttyd/3dbox.webp?run";
-import spmbox from "./spm/3dbox.webp?run";
-import ssbox from "./ss/3dbox.webp?run";
-import csbox from "./cs/3dbox.webp?run";
-import okbox from "./ok/3dbox.webp?run";
+import pm64box from "./pm64/3dbox.webp?run&lqip=0";
+import ttydbox from "./ttyd/3dbox.webp?run&lqip=0";
+import spmbox from "./spm/3dbox.webp?run&lqip=0";
+import ssbox from "./ss/3dbox.webp?run&lqip=0";
+import csbox from "./cs/3dbox.webp?run&lqip=0";
+import okbox from "./ok/3dbox.webp?run&lqip=0";
 
 export interface Game {
     url?: string;
     viewTransitionTag: string;
     name: string;
     console: string;
-    boxArtUrl: object[];
+    boxArtUrl: AssetData;
     year: number;
 }
 
