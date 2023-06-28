@@ -1,19 +1,19 @@
 <script lang="ts">
-    import logotype from "$lib/assets/logotype.png";
+    import logotype from "$lib/assets/logotype.png?run&lqip=0";
+    import Img from "@zerodevx/svelte-img";
 </script>
 
 <header class="align-center flex items-center p-4">
     <div class="max-w-2xl">
         <div class="flex items-center justify-center gap-2 text-white">
             <h1 id="name" class="lg text-6xl font-bold sm:text-7xl lg:text-8xl">
-                <img src={logotype} alt="Star Haven" />
+                <Img src={logotype} alt="Star Haven" />
             </h1>
         </div>
 
         <p
             id="description"
-            class="mx-10 my-4 p-6 pb-9 text-center text-lg sm:text-xl md:text-2xl"
-        >
+            class="mx-10 my-4 p-6 pb-9 text-center text-lg sm:text-xl md:text-2xl">
             <!-- inline-block to break lines nicely -->
             <span class="sm:inline-block">
                 The community of modders and reverse-engineers
