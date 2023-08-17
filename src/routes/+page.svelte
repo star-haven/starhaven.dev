@@ -50,10 +50,6 @@
                 <Icon data={faPlay} scale={1} class="mr-2" />
                 Games
             </LinkButton>
-            <LinkButton href="/wiki">
-                <Icon data={faBook} scale={1} class="mr-2" />
-                Wiki
-            </LinkButton>
             <!--
             <LinkButton href="/mods">
                 <Icon data={faBook} scale={1} class="mr-2" />
