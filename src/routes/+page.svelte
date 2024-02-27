@@ -50,12 +50,10 @@
                 <Icon data={faPlay} scale={1} class="mr-2" />
                 Games
             </LinkButton>
-            <!--
-            <LinkButton href="/mods">
+            <LinkButton href="https://docs.starhaven.dev">
                 <Icon data={faBook} scale={1} class="mr-2" />
-                Mods
+                How to make romhacks
             </LinkButton>
-            -->
         </div>
         <div class="flex items-center justify-center gap-2">
             <LinkButton href="/github">
