@@ -10,7 +10,7 @@
         faTwitter,
         faYoutube,
     } from "@fortawesome/free-brands-svg-icons";
-    import { faBook, faPlay } from "@fortawesome/free-solid-svg-icons";
+    import { faBook, faHammer, faPlay } from "@fortawesome/free-solid-svg-icons";
 
     import Diorama from "./Diorama.svelte";
 
@@ -53,6 +53,10 @@
             <LinkButton href="https://docs.starhaven.dev">
                 <Icon data={faBook} scale={1} class="mr-2" />
                 How to make romhacks
+            </LinkButton>
+            <LinkButton href="/patch">
+                <Icon data={faHammer} scale={1} class="mr-2" />
+                Patcher
             </LinkButton>
         </div>
         <div class="flex items-center justify-center gap-2">

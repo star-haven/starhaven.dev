@@ -22,13 +22,12 @@
 <div class="flex min-h-screen flex-col text-gray-700">
     <slot />
 
-    <footer class="max-w-prose p-6 text-sm" style:--tag="footer">
+    <footer class="max-w-prose p-6 text-xs opacity-50" style:--tag="footer">
         <p>
             Star Haven is an independent community of fans and is not affiliated
             with or endorsed by Nintendo or Intelligent Systems. Any mentions of
             PAPER MARIO is for informational purposes only and does not imply
-            any association with or endorsement by Nintendo. All rights belong
-            to their respective owners.
+            any association with or endorsement by Nintendo.
         </p>
         <!--<p class="mt-1">
             Background rendering by <a href="https://noclip.website">noclip.website</a>, a digital museum of video game levels.
