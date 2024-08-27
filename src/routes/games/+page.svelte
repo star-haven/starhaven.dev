@@ -1,10 +1,11 @@
 <script lang="ts">
-    import Nav from "$lib/components/Nav.svelte";
+    import Breadcrumbs from "$lib/components/Breadcrumbs.svelte";
+    // import Nav from "$lib/components/Nav.svelte";
     import { arr as games } from "./games";
     import Img from "@zerodevx/svelte-img";
 </script>
 
-<Nav />
+<Breadcrumbs />
 
 <main class="w-full p-9">
     <ol class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -18,7 +19,6 @@
                         src={game.boxArtUrl}
                         alt="Box art"
                         class="mb-4 h-auto w-full rounded-t-lg" />
-
                     <div class="w-full p-4">
                         <h2 class="text-2xl font-semibold text-gray-800">
                             {game.name}
