@@ -26,6 +26,16 @@
     <LandingHeader />
 
     <nav class="flex w-full max-w-lg flex-col gap-4">
+        <div class="flex items-center justify-center gap-4">
+            <LinkButton href="/mods" playCtb>
+                <Icon data={faPlay} scale={2.5} class="mr-2" />
+                Play Mods!
+            </LinkButton>
+            <LinkButton href="https://docs.starhaven.dev" modCtc>
+                <Icon data={faBook} scale={2.5} class="mr-2" />
+                Make Mods!
+            </LinkButton>
+        </div>
         <div class="flex items-center justify-around gap-4">
             <div class="flex items-center justify-center gap-4">
                 <LinkButton href="/discord" discordCta>
@@ -44,20 +54,6 @@
                     </div>
                 {/if}
             </div>
-        </div>
-        <div class="flex items-center justify-center gap-2">
-            <LinkButton href="/games">
-                <Icon data={faPlay} scale={1} class="mr-2" />
-                Games
-            </LinkButton>
-            <LinkButton href="https://docs.starhaven.dev">
-                <Icon data={faBook} scale={1} class="mr-2" />
-                How to make romhacks
-            </LinkButton>
-            <LinkButton href="/patch">
-                <Icon data={faHammer} scale={1} class="mr-2" />
-                Patcher
-            </LinkButton>
         </div>
         <div class="flex items-center justify-center gap-2">
             <LinkButton href="/github">
