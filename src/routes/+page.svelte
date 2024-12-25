@@ -10,7 +10,7 @@
         faTwitter,
         faYoutube,
     } from "@fortawesome/free-brands-svg-icons";
-    import { faBook, faPlay } from "@fortawesome/free-solid-svg-icons";
+    import { faBook, faHammer, faPlay } from "@fortawesome/free-solid-svg-icons";
 
     import Diorama from "./Diorama.svelte";
 
@@ -50,16 +50,14 @@
                 <Icon data={faPlay} scale={1} class="mr-2" />
                 Games
             </LinkButton>
-            <LinkButton href="/wiki">
+            <LinkButton href="https://docs.starhaven.dev">
                 <Icon data={faBook} scale={1} class="mr-2" />
-                Wiki
+                How to make romhacks
             </LinkButton>
-            <!--
-            <LinkButton href="/mods">
-                <Icon data={faBook} scale={1} class="mr-2" />
-                Mods
+            <LinkButton href="/patch">
+                <Icon data={faHammer} scale={1} class="mr-2" />
+                Patcher
             </LinkButton>
-            -->
         </div>
         <div class="flex items-center justify-center gap-2">
             <LinkButton href="/github">
