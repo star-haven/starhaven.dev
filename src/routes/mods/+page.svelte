@@ -12,9 +12,12 @@
     const searchMods = () => {
         return filteredMods = mods.filter(mod => {
             let modName = mod.displayName.toLowerCase();
-            return modName.includes(searchTerm.toLowerCase())
+            let modGame = mod.game.toLowerCase();
+            let search = searchTerm.toLowerCase();
+            return modName.includes(search) || modGame.includes(search);
         });
-    }
+    };
+
 
     mods.sort();
 </script>
@@ -66,7 +69,7 @@
                     {color}
                     />
                 {/each}
-                
+
             {:else if filteredMods.length === 0}
                 No mods found!
             {:else}
