@@ -1,13 +1,18 @@
 <script lang="ts">
     import Breadcrumbs from "$lib/components/Breadcrumbs.svelte";
     import Mod from "$lib/components/Mod.svelte";
-    // import Nav from "$lib/components/Nav.svelte";
     import { arr as mods } from "./mods";
-
 
     let searchTerm = $state("");
 
     let filteredMods: string | any[] = $state([]);
+
+    // Ensure relative paths are resolved to absolute URLs, comment this out when building locally
+    mods.forEach(mod => {
+        if (mod.iconUrl.startsWith("/")) {
+            mod.iconUrl = `${window.location.origin}${mod.iconUrl}`;
+        }
+    });
 
     const searchMods = () => {
         return filteredMods = mods.filter(mod => {
@@ -17,7 +22,6 @@
             return modName.includes(search) || modGame.includes(search);
         });
     };
-
 
     mods.sort();
 </script>
