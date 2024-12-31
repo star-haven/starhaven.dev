@@ -55,7 +55,7 @@ export const obj: { [key: string]: Mod } = {
         downloadUrl:
             "https://github.com/Brotenko/PMMasterQuest/files/10786888/PMMQ_1.5.1.1.mod.zip",
         sourceUrl: "https://github.com/Brotenko/PMMasterQuest",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "The Dark Souls of Paper Mario",
         description:
             'Considered "The Dark Souls of Paper Mario", Master Quest is incredibly difficult.\n\nIt was designed with elite challenge runners in mind, and unless you have extensive knowledge of Paper Mario, you may struggle with much of the content.',
@@ -84,7 +84,7 @@ export const obj: { [key: string]: Mod } = {
         downloadUrl:
             "https://github.com/Brotenko/PMMasterQuest/files/10786890/PMMQ_Jr._1.5.1.2.mod.zip",
         sourceUrl: "https://github.com/Brotenko/PMMasterQuest",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "The Not-So Dark Souls of Paper Mario",
         description:
             "Master Quest JR is an easier version of Master Quest, for those who still want to experience the new content.\n\nHave fun!",
@@ -104,7 +104,7 @@ export const obj: { [key: string]: Mod } = {
         downloadUrl:
             "https://github.com/eldexterr/pmblackpit/releases/download/v1.4.1/BlackPit_v1.4.1.bps",
         sourceUrl: "https://github.com/eldexterr/pmblackpit",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "Challenge yourself inside the Pit!",
         description:
             "Black Pit is a mod about Mario in a pit.\n\nWill you survive?",
@@ -124,7 +124,7 @@ export const obj: { [key: string]: Mod } = {
         downloadUrl:
             "https://github.com/Shade-Blade/PMDarkStarEdition/blob/main/DarkStarEdition%20v1.5.3h5.bps",
         sourceUrl: "https://github.com/Shade-Blade/PMDarkStarEdition",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "The Bloodborne of Paper Mario",
         description:
             "Paper Mario: Dark Star Edition is a mod for Paper Mario created by ShadeBlade that adds a lot of new content to the game and increases the difficulty.",
@@ -143,7 +143,7 @@ export const obj: { [key: string]: Mod } = {
         version: "3.1",
         downloadUrl: "https://fp-patcher.starhaven.dev/",
         sourceUrl: "https://github.com/JCog/fp",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "Hone your skills!",
         description:
             "A mod intended for speedrun practice, glitch hunting, and just general game research.\nAmong many other things, it allows easy warping to locations, bosses, and speedrun tricks, easy editing of common game data, a real-time timer and lag frame counter, trainers for learning tricks, and customizable settings.",
@@ -164,7 +164,7 @@ export const obj: { [key: string]: Mod } = {
         downloadUrl:
             "https://github.com/jdaster64/ttyd-infinite-pit/releases/download/v2.40/InfinitePit_v2_40_r64.gci",
         sourceUrl: "https://github.com/jdaster64/ttyd-infinite-pit",
-        iconUrl: "/public/assets/emptyttyd.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/emptyttyd.webp?run&lqip=0",
         tagline: "A roguelike Pit of 100 Trials!",
         description:
             "Paper Mario: TTYD Infinite Pit is a Roguelike mod of TTYD's Pit of 100 Trials by Jdaster64.\n\nIn it, Mario is pit against an endless series of random enemy fights, with random item drops, chest rewards, and more!",
@@ -183,7 +183,7 @@ export const obj: { [key: string]: Mod } = {
         pageUrl: "https://snakemouth-den.itch.io/paper-mario-2",
         downloadUrl: "https://snakemouth-den.itch.io/paper-mario-2",
         sourceUrl: "https://snakemouth-den.itch.io/paper-mario-2",
-        iconUrl: "/public/assets/2.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/2.webp?run&lqip=0",
         tagline: "The long awaited sequel!",
         description:
             "Wrymouth, Nine & Den proudly present: Paper Mario 2, sequel to popular JRPG Paper Mario.",
@@ -202,7 +202,7 @@ export const obj: { [key: string]: Mod } = {
         pageUrl: "https://miigle.itch.io/wario",
         downloadUrl: "https://miigle.itch.io/wario",
         sourceUrl: "https://github.com/Miigle-Rose/wario",
-        iconUrl: "/public/assets/wario.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/wario.webp?run&lqip=0",
         tagline: "WARIO!!!!!!!!!!",
         description:
             "WARIO!!!!!!!!!!\nExplore the Warioverse.\nWario.\nWario.\nWario.\nWario.\nWARIO!!!!!!!!!",
@@ -224,7 +224,7 @@ export const obj: { [key: string]: Mod } = {
             "https://drive.google.com/file/d/1AhXU1uScWzdQNu5jHWDFK-fXcHo4kcoF/view?usp=drive_link",
         sourceUrl:
             "https://www.dropbox.com/s/yf10myw0wi8p9ju/Paper%20Mario%20Pro%20Mode%20Source%20(beta%20r3)%20(2).zip?dl=0",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "The Original Hard Mode",
         description: "A difficulty mod for Paper Mario.",
         game: "PM64",
@@ -241,7 +241,7 @@ export const obj: { [key: string]: Mod } = {
         version: "0.27.1",
         downloadUrl: "https://pm64randomizer.com/",
         sourceUrl: "https://pm64randomizer.com/github",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "Random Fun!",
         description: "A randomiser for Paper Mario.",
         game: "PM64",
@@ -260,7 +260,7 @@ export const obj: { [key: string]: Mod } = {
         downloadUrl:
             "https://github.com/L5050/Flipside-Mod-Manager/blob/master/README.md#list-of-mods",
         sourceUrl: "https://github.com/L5050/SPM-Hard-Mode",
-        iconUrl: "/public/assets/emptyspm.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/emptyspm.webp?run&lqip=0",
         tagline: "Super Difficult!",
         description:
             "This mod attempts to make the gameplay a lot more appealing and difficult.\n\nXP, HP, damage and bosses have been reworked!",
@@ -280,7 +280,7 @@ export const obj: { [key: string]: Mod } = {
         downloadUrl:
             "https://files.gamebanana.com/mods/paper_mario_sticker_star_ttyd_style_12.zip",
         sourceUrl: "https://gamebanana.com/mods/461906",
-        iconUrl: "/public/assets/emptyss.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/emptyss.webp?run&lqip=0",
         tagline: "New textures for Sticker Star!",
         description: "Makes Sticker Star look more like TTYD.",
         game: "SS",
@@ -298,7 +298,7 @@ export const obj: { [key: string]: Mod } = {
         downloadUrl:
             "https://github.com/JackitK/Paper-Mario-Sweet-Expedition/releases/download/v1.0.3/Sweet.Expedition.V1.0.3.bps",
         sourceUrl: "https://github.com/JackitK/Paper-Mario-Sweet-Expedition",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "A Real Treat!",
         description:
             "Paper Mario's Sweet Adventure is a mod for Paper Mario 64, featuring Mario's adventure to a new land called Glace Island.\n\nKolorado has heard rumors of a grand treasure that lies there, and he needs Mario's help to retrieve it.",
@@ -317,7 +317,7 @@ export const obj: { [key: string]: Mod } = {
         version: "1.2.4",
         pageUrl: "https://enneagon.itch.io/the-paper-parable",
         downloadUrl: "https://enneagon.itch.io/the-paper-parable",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "This is the story of a man named Mario.",
         description:
             "The Paper Parable is a Paper Mario-flavoured remix of The Stanley Parable. You will play as Mario, and you will not play as Mario. Your choices will matter, and your choices will be meaningless. You will solve the mystery of Princess Peach's disappearance, and you will be forever left in the dark.",
@@ -336,7 +336,7 @@ export const obj: { [key: string]: Mod } = {
         downloadUrl:
             "https://github.com/eldexterr/ttyd64/releases/download/sourceCode/TTYD64-v1.0.0.bps",
         sourceUrl: "https://github.com/eldexterr/ttyd64",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "Old Game, New Features!",
         description:
             "TTYD64 is a PM64 romhack that adds TTYD's gameplay, items, badges, and recipes into PM64, plus a bunch of new areas into the game.",
@@ -362,7 +362,7 @@ export const obj: { [key: string]: Mod } = {
             "https://drive.google.com/file/d/1fB76FOv_wrnmw6nLhox9enq_XMJWtu0V/view?usp=drive_link",
         sourceUrl:
             "https://drive.google.com/file/d/1fB76FOv_wrnmw6nLhox9enq_XMJWtu0V/view?usp=drive_link",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "A Christmas Miracle!",
         description:
             "Merry Christmas everyone, this is our gift to you, made in only 19 days.\nWe hope you enjoy it just as much as we enjoyed making it.\n\nAnd if you don't... there is a Gulpit rapidly approaching your location :)",
@@ -387,7 +387,7 @@ export const obj: { [key: string]: Mod } = {
         version: "0.1",
         downloadUrl:
             "https://drive.google.com/file/d/1J0GPtfLqFn2Li4ZYe2DcWTeQaShh_0wI/view?usp=drive_link",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "A Christmas Demo!",
         description:
             "Merry chrimstas!\nWe hope you enjoy this teaser for the whole thing we whipped up :>\n\nI wish you all happy holidays!!",
@@ -408,7 +408,7 @@ export const obj: { [key: string]: Mod } = {
         downloadUrl:
             "https://github.com/Reeds-github/Hero-Mode/releases/tag/v4.0.3",
         sourceUrl: "https://github.com/Reeds-github/Hero-Mode",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "A Heroic Adventure!",
         description:
             "A reimagined The Thousand-Year Door story that comes with new puzzles, harder difficulty, badges, items, and more twists!\n\nHero Mode is intended for 'professional players,' but can be also played by 'casual players' too!",
@@ -426,7 +426,7 @@ export const obj: { [key: string]: Mod } = {
         version: "1.1.1",
         downloadUrl:
             "https://drive.google.com/file/d/160i43cEq7ysRvCX6lT7WjKIuB2OP46V2/view?usp=sharing",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "Thamz In A Wheelchair",
         description: "weegee",
         game: "PM64",
@@ -443,7 +443,7 @@ export const obj: { [key: string]: Mod } = {
         version: "1.1.0",
         downloadUrl:
             "https://drive.google.com/file/d/1tJJDJVG-AljTKiLIwbaUbTP9_kXbNsWd/view?usp=sharing",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "It's Desert Bus!",
         description:
             "Experience the incredible Desert Bus, in Paper Mario form!",
@@ -461,7 +461,7 @@ export const obj: { [key: string]: Mod } = {
         version: "1.0",
         downloadUrl:
             "https://drive.google.com/file/d/1mvnr3mSMR2KXJVsdjAO_O3mbkxsdDbOv/view?usp=sharing",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "Cylindrical!",
         description:
             "No New Areas!\n\nA single new structure!\n\nHistorical value!",
@@ -480,7 +480,7 @@ export const obj: { [key: string]: Mod } = {
         downloadUrl:
             "https://github.com/CountHomer69/Paper-Memeio-69/blob/6d555334b8c973ab699c1b45c5731ced56648139/out/Paper%20Memeio%2069%200.0.69.mod",
         sourceUrl: "https://github.com/CountHomer69/Paper-Memeio-69",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "Friggity Sweet!",
         description: "The most awesome and epic mod, Paper Memeio 69, is here!",
         game: "PM64",
@@ -498,7 +498,7 @@ export const obj: { [key: string]: Mod } = {
         downloadUrl:
             "https://github.com/quickenfixen/TextlessPM/releases/download/v0.2/TextlessPM.v0.2.mod",
         sourceUrl: "https://github.com/quickenfixen/TextlessPM",
-        iconUrl: "/public/assets/blank.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/blank.webp?run&lqip=0",
         tagline: " ",
         description: " ",
         game: "PM64",
@@ -515,7 +515,7 @@ export const obj: { [key: string]: Mod } = {
         version: "0.1 Demo",
         downloadUrl:
             "https://drive.google.com/file/d/1ksFdecgM03hgLeZSCBTD18UBJszNViNg/view?usp=drive_link",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "Feeling Sussy?",
         description: "The mod is Among Us!",
         game: "PM64",
@@ -533,7 +533,7 @@ export const obj: { [key: string]: Mod } = {
         downloadUrl:
             "https://www.mediafire.com/file/r1jx6syuq12sefz/PM_AllBosses_v1.0.1.bps/file",
         sourceUrl: "https://github.com/eldexterr/allbosses",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "The Ultimate Challenge!",
         description: "Can you beat every boss at once?",
         game: "PM64",
@@ -550,7 +550,7 @@ export const obj: { [key: string]: Mod } = {
         version: "1.0",
         downloadUrl: "https://gamebanana.com/mods/341277",
         pageUrl: "https://gamebanana.com/mods/341277",
-        iconUrl: "/public/assets/emptytok.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/emptytok.webp?run&lqip=0",
         tagline: "Camera Tool",
         description:
             "Removes the HUD (and optionally Mario) for beautiful screenshots",
@@ -568,7 +568,7 @@ export const obj: { [key: string]: Mod } = {
         version: "1.0",
         downloadUrl:
             "https://www.mediafire.com/file/erc6q618s3i5rij/Paper_Mario_Luigi_Partner_Mod.mod/file",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "Wahoo!",
         description: "Luigi is added as a partner!",
         game: "PM64",
@@ -585,7 +585,7 @@ export const obj: { [key: string]: Mod } = {
         version: "1.1",
         pageUrl: "https://shyblookster137.itch.io/haunted-paper-mario",
         downloadUrl: "https://shyblookster137.itch.io/haunted-paper-mario",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "It's Haunted.",
         description:
             "You retrieve a haunted copy of Paper Mario for the Nintendo 64 from an unsuspecting corner of the internet.\n\nWas this a mistake?",
@@ -603,7 +603,7 @@ export const obj: { [key: string]: Mod } = {
         version: "1.0",
         pageUrl: "https://gamebanana.com/mods/505581",
         downloadUrl: "https://gamebanana.com/mods/505581",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "Play as Toadette!",
         description: "aka Paper Mario featuring Toadette....",
         game: "PM64",
@@ -620,7 +620,7 @@ export const obj: { [key: string]: Mod } = {
         version: "1.0",
         downloadUrl:
             "https://www.dropbox.com/scl/fi/osthuc3v4sg7932aimw9x/EscapeGoombaVillageV2.zip?rlkey=b9bjih6p0o3vqorfmkdugk1ex&dl=0",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "GUESS WHO'S BACK!?!?",
         description:
             "I've kidnapped the princess again (please don't check how many times it's been). This time though, I know things will be different. And yeah, I know that I say that every time, but this time, I've got the STAR ROD!!! This awesome device lets me change Paper Mario 64 to WHATEVER I WANT!!!...",
@@ -638,7 +638,7 @@ export const obj: { [key: string]: Mod } = {
         version: "1.0",
         pageUrl: "https://enneagon.itch.io/paper-dank-rave",
         downloadUrl: "https://enneagon.itch.io/paper-dank-rave",
-        iconUrl: "/public/assets/dank.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/dank.webp?run&lqip=0",
         tagline: "The Dankest Mod Ever!",
         description:
             "Loosely inspired by the Bowser's Dank Rave series of mods for Super Mario 64, this Paper Mario 64 mod was created in just two days and contains about 5-10 minutes of gameplay.\n\nHappy raving, everyone!",
@@ -656,7 +656,7 @@ export const obj: { [key: string]: Mod } = {
         version: "1.0",
         pageUrl: "https://enneagon.itch.io/paper-dank-rave-2",
         downloadUrl: "https://enneagon.itch.io/paper-dank-rave-2",
-        iconUrl: "/public/assets/dank.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/dank.webp?run&lqip=0",
         tagline: "The Dankest Mod Ever! Again!",
         description:
             "Loosely inspired by the Bowser's Dank Rave series of mods for Super Mario 64, this sequel to a Paper Mario 64 mod was created in just two days and contains about 5-10 minutes of gameplay.\n\nHappy raving, everyone!",
@@ -674,7 +674,7 @@ export const obj: { [key: string]: Mod } = {
         version: "1.0",
         pageUrl: "https://enneagon.itch.io/paper-dank-rave-3",
         downloadUrl: "https://enneagon.itch.io/paper-dank-rave-3",
-        iconUrl: "/public/assets/dank.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/dank.webp?run&lqip=0",
         tagline: "Now a yearly tradition!",
         description:
             "Loosely inspired by the Bowser's Dank Rave series of mods for Super Mario 64, this yearly continuation of a Paper Mario 64 mod was created in just two days and contains about 5-10 minutes of gameplay.\n\nHappy raving, everyone!",
@@ -692,7 +692,7 @@ export const obj: { [key: string]: Mod } = {
         version: "1.0",
         pageUrl: "https://enneagon.itch.io/ultimate-goomboss-challenge",
         downloadUrl: "https://enneagon.itch.io/ultimate-goomboss-challenge",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "Think you're strong enough?",
         description:
             "Saving the world is hungry work. With the Star Rod recovered, a satisfied Mario and Goombario head out for a bite to eat.\nBut who's this in their favourite picnic spot?\nAnd more importantly, can you come up with a strategy to defeat...\nTHE ULTIMATE GOOMBOSS CHALLENGE?",
@@ -710,7 +710,7 @@ export const obj: { [key: string]: Mod } = {
         version: "1.0",
         pageUrl: "https://den01.itch.io/pm-eggstraordinary-egg-hunt",
         downloadUrl: "https://den01.itch.io/pm-eggstraordinary-egg-hunt",
-        iconUrl: "/public/assets/Egg.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/Egg.webp?run&lqip=0",
         tagline: "An Eggstraordinary Adventure!",
         description:
             "Join Mario & Luigi for the annual Easter Egg Hunt in Toad Town and close regions like Koopa Village and Shooting Star Summit!",
@@ -728,7 +728,7 @@ export const obj: { [key: string]: Mod } = {
         version: "1.0",
         downloadUrl:
             "https://github.com/PokemonHacker1337/Misc-Projects/raw/main/PapewMawiowo.mod",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "OwO",
         description: "Paper Mario 64, uwu-ified!",
         game: "PM64",
@@ -745,7 +745,7 @@ export const obj: { [key: string]: Mod } = {
         version: "1.?",
         downloadUrl:
             "https://drive.google.com/file/d/1ZZVm0uoW2uzDOuxt4xzJqYZ3wdpuDoKN/view?usp=sharing",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "Happy Anniversary!",
         description:
             "Paper Mario 64 with QoL changes to celebrate the 20th anniversary.",
@@ -764,7 +764,7 @@ export const obj: { [key: string]: Mod } = {
         sourceUrl: "https://github.com/Rainchus/pm-jam",
         downloadUrl: "https://n8-typo.itch.io/pm-bib",
         pageUrl: "https://n8-typo.itch.io/pm-bib",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "Back in Bowser!",
         description:
             "Team up with Starlow in this proof-of-concept Paper Mario 64 ROM Hack! Battle familiar foes, use new abilities, and try your best to escape Bowser's body!",
@@ -783,7 +783,7 @@ export const obj: { [key: string]: Mod } = {
         version: "1.0",
         downloadUrl: "https://eldexter.itch.io/cooking-princess",
         pageUrl: "https://eldexter.itch.io/cooking-princess",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "It's Like Overcooked!",
         description:
             "Surpass cooking-based time attack levels and make the largest amount of toads happy (or unhappy) with your bakery.",
@@ -802,7 +802,7 @@ export const obj: { [key: string]: Mod } = {
         version: "1.0",
         downloadUrl: "https://fewffwa.itch.io/paper-mario-cake-chaos",
         pageUrl: "https://fewffwa.itch.io/paper-mario-cake-chaos",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "Chaotic!",
         description:
             "Waking up in a land of food, Mario must deliver ingredients to a familiar foe...",
@@ -821,7 +821,7 @@ export const obj: { [key: string]: Mod } = {
         version: "1.0",
         downloadUrl: "https://wrymouth.itch.io/gourmet-guys-1000iq-food-quiz",
         pageUrl: "https://wrymouth.itch.io/gourmet-guys-1000iq-food-quiz",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "Quizzical!",
         description: "Help Gourmet Guy win the 1000 IQ Food Quiz!",
         game: "PM64",
@@ -839,7 +839,7 @@ export const obj: { [key: string]: Mod } = {
         version: "0.1",
         downloadUrl: "https://miigle.itch.io/peachcook64",
         pageUrl: "https://miigle.itch.io/peachcook64",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "Don't Play This One.",
         description:
             "Princess Peach needs to cook for Gourmet Guy! Can you do it?\nPlay over [1] exciting minigames where you need to cook!\nCan you beat the secret ending?",
@@ -858,7 +858,7 @@ export const obj: { [key: string]: Mod } = {
         version: "1.0",
         downloadUrl: "https://wrymouth.itch.io/paper-mario-saving-new-years",
         pageUrl: "https://wrymouth.itch.io/paper-mario-saving-new-years",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "Can YOU save New Years?",
         description:
             "Mario faces a new enemy. If he doesn't win, 2022 may never end...",
@@ -877,7 +877,7 @@ export const obj: { [key: string]: Mod } = {
         downloadUrl:
             "https://github.com/shiken-yme/blocks-of-wisdom/releases/latest",
         sourceUrl: "https://github.com/shiken-yme/blocks-of-wisdom",
-        iconUrl: "/public/assets/emptyspm.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/emptyspm.webp?run&lqip=0",
         tagline: "Spawn blocks anywhere!",
         description:
             "A mod that allows you to spawn and customize up to 5 blocks in nearly any room in the game.",
@@ -896,7 +896,7 @@ export const obj: { [key: string]: Mod } = {
         downloadUrl:
             "https://github.com/shiken-yme/spm-pit-randomizer/releases/latest",
         sourceUrl: "https://github.com/shiken-yme/spm-pit-randomizer",
-        iconUrl: "/public/assets/emptyspm.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/emptyspm.webp?run&lqip=0",
         tagline: "An all-new Pit experience!",
         description:
             "Randomizes the contents of the Flipside Pit of 100 Trials, adds new enemies, and rebalances others.",
@@ -915,7 +915,7 @@ export const obj: { [key: string]: Mod } = {
         pageUrl: "https://bit.ly/tower-of-trials-guide",
         downloadUrl: "https://github.com/jdaster64/ttyd-tot/releases/latest",
         sourceUrl: "https://github.com/jdaster64/ttyd-tot/releases",
-        iconUrl: "/public/assets/emptyttyd.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/emptyttyd.webp?run&lqip=0",
         tagline: "A Rogue-Like Race!",
         description:
             "Tower of Trials is a Rogue-like mod of Paper Mario: TTYD by Jdaster64.\nIn it, Mario storms the newly-renovated Hooktail Castle, fighting through a battery of enemy encounters and building up an arsenal of party members, moves, badges and other rewards!",
@@ -934,7 +934,7 @@ export const obj: { [key: string]: Mod } = {
         pageUrl: "https://nictuber.itch.io/paper-mario-sacred-trio",
         downloadUrl: "https://nictuber.itch.io/paper-mario-sacred-trio",
         sourceUrl: "https://github.com/NicTube/pm-sacred-trio-src",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "A new little adventure in the Great Cosmos!",
         description:
             "Join Mario for a new little adventure in the Great Cosmos! Team up with your new partner Salmos, who has the ability to float straight through space!",
@@ -954,7 +954,7 @@ export const obj: { [key: string]: Mod } = {
         pageUrl: "https://pkslab.itch.io/paper-mario-and-the-floating-islands",
         downloadUrl:
             "https://pkslab.itch.io/paper-mario-and-the-floating-islands",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "A short and sweet mod of PM64 :)",
         description:
             "(DONT TALK DIRECTLY TO THE RED YOSHI, IT SOFTLOCKES YOUR GAME) This mod is extremely short btw, it can last up to 10 minutes if quickly played. It's main premise is that Mario is on a Floating Island and he has to travel to the North Island to defeat Kent C. Koopa who has taken rule over the island.",
@@ -976,7 +976,7 @@ export const obj: { [key: string]: Mod } = {
         downloadUrl:
             "https://wrymouth.itch.io/paper-mario-and-the-legendary-star-ship",
         sourceUrl: "https://github.com/Wrymouth/pm-space-game/tree/mod-src",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "A dangerous flight...",
         description:
             "Join Mario for a new little adventure in the Great Cosmos! Team up with your new partner Salmos, who has the ability to float straight through space!",
@@ -997,7 +997,7 @@ export const obj: { [key: string]: Mod } = {
         downloadUrl:
             "https://shyblookster137.itch.io/pm-five-letters-until-doom",
         sourceUrl: "https://github.com/Den1604/space-jam",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "Deliver some mail on time.",
         description:
             "Play as Mario and aid Parakarry in this cosmic adventure on a letter delivery escapade which trancends space and... space? (Time travel has not yet been invented, sorry.)",
@@ -1016,7 +1016,7 @@ export const obj: { [key: string]: Mod } = {
         version: "0.1",
         pageUrl: "https://enneagon.itch.io/tatangas-nebula-demo",
         downloadUrl: "https://enneagon.itch.io/tatangas-nebula-demo",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "An FTL-inspired adventure!",
         description:
             "That evil alien Tatanga has kidnapped Princess Peach. It's up to Paper Mario and the Sarasaland Space Agency to get her back!",
@@ -1037,7 +1037,7 @@ export const obj: { [key: string]: Mod } = {
         pageUrl: "https://l5050.itch.io/brobot-after-some-windex",
         downloadUrl:
             "https://github.com/L5050/Brobot-After-Some-Windex",
-        iconUrl: "/public/assets/emptyspm.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/emptyspm.webp?run&lqip=0",
         tagline: "Fight Brobot in a New Adventure!",
         description:
             "A cosmic themed modification of Super Paper Mario for the Paper Mario Modding Jam!",
@@ -1058,7 +1058,7 @@ export const obj: { [key: string]: Mod } = {
             "https://fewffwa.itch.io/gourmet-guys-1000000-iq-cosmic-brained-quiz",
         downloadUrl:
             "https://fewffwa.itch.io/gourmet-guys-1000000-iq-cosmic-brained-quiz",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "Presented by Gourmet Guy!",
         description:
             "It's Gourmet Guy's 1,000,000 IQ Cosmic-Brained Quiz!\nCan you take home the ultimate prize?",
@@ -1080,7 +1080,7 @@ export const obj: { [key: string]: Mod } = {
         downloadUrl:
             "https://snakemouth-den.itch.io/gourmet-guys-extravagant-boss-fight-bonanza",
         sourceUrl: "https://github.com/Den1604/BattleHack",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "Presented by Gourmet Guy!",
         description:
             "Gourmet Guy stole the Star Rod from Star Haven! Now it is up to Mario to save the day once again. Can you defeat Gourmet Guy and retrieve the Star Rod for the Star Spirits, and restore peace in the Mushroom Kingdom?",
@@ -1100,7 +1100,7 @@ export const obj: { [key: string]: Mod } = {
         pageUrl: "https://wrymouth.itch.io/paper-mario-retro-rumble",
         downloadUrl: "https://wrymouth.itch.io/paper-mario-retro-rumblea",
         sourceUrl: "https://github.com/Wrymouth/pm-space-game/tree/mod-src",
-        iconUrl: "/public/assets/soretro.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/soretro.webp?run&lqip=0",
         tagline: "Face off against some exciting new foes!",
         description:
             "The most rushed mod I've made in a bit. There's a few new enemies, and they all have 2-3 attacks each. Two custom songs as well, of which one new and one reused from my last mod.",
@@ -1120,7 +1120,7 @@ export const obj: { [key: string]: Mod } = {
         pageUrl: "https://t00nbink.itch.io/thekoopamancer",
         downloadUrl: "https://t00nbink.itch.io/thekoopamancer",
         sourceUrl: "https://github.com/LuukvanEck/TheKoopamancerFury",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "Take on the powerful Koopamancer!",
         description:
             "Can you defeat the powerful and menacing KOOPAMANCER?!\n\nThis Paper Mario 64 mod adds a whole new boss battle, 2 new badges specifically made for this boss fight and a new partner to help you.",
@@ -1140,7 +1140,7 @@ export const obj: { [key: string]: Mod } = {
         pageUrl: "https://darxoon.itch.io/paper-mario-vs-luigi",
         downloadUrl: "https://darxoon.itch.io/paper-mario-vs-luigi",
         sourceUrl: "https://github.com/Darxoon/PMvL",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "Mario fights against... Luigi?",
         description:
             "Mario from the hit game Paper Mario fights against..... his brother Luigi?\n\nYou will never figure out why!",
@@ -1163,7 +1163,7 @@ export const obj: { [key: string]: Mod } = {
             "https://shyblookster137.itch.io/this-is-how-we-mod-paper-mario",
         sourceUrl:
             "https://github.com/ShyBlookster137/This_is_how_we_mod_Paper_Mario-Source",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "This is how...we advertise!",
         description:
             "An epic showdown between Mario and an old acquaintance.\n\nEnjoy one truly special battle against a special someone in this very special mod!",
@@ -1184,7 +1184,7 @@ export const obj: { [key: string]: Mod } = {
         downloadUrl:
             "https://soulmana.itch.io/paper-mario-64-mod-sullied-grace",
         sourceUrl: "https://github.com/Asmybelle/pm64-Sulliedgrace",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "Battle Queen Sectonia!",
         description:
             "My first paper mario 64 mod, made for the star haven jam 2024 on the theme 'battle'.\n\nI chose to implement a battle against Queen Sectonia from the kirby series, because I like the boss, and because her music is a banger. ",
@@ -1205,7 +1205,7 @@ export const obj: { [key: string]: Mod } = {
         downloadUrl: "https://github.com/L5050/Flipside-Mod-Manager/blob/master/README.md#list-of-mods",
         sourceUrl:
             "https://github.com/L5050/Hard-Mode-Rubies-and-Magic/tree/master",
-        iconUrl: "/public/assets/emptyspm.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/emptyspm.webp?run&lqip=0",
         tagline: "Hard Mode DLC!",
         description:
             "Was base hard mode still too easy for you? Try this DLC for hard mode with new rebalances and updates to boss AI.",
@@ -1225,7 +1225,7 @@ export const obj: { [key: string]: Mod } = {
         pageUrl: "https://enneagon.itch.io/shift-t-showdown",
         downloadUrl: "https://enneagon.itch.io/shift-t-showdown",
         sourceUrl: "https://github.com/Enneagon/papervs",
-        iconUrl: "/public/assets/empty.webp?run&lqip=0",
+        iconUrl: "/src/lib/assets/empty.webp?run&lqip=0",
         tagline: "Mario takes on his greatest foe yet!",
         description:
             "Paper Mario faces off against the dank Toad of doom, Shift T.!\n\nIt'll take some true heroics to save the world from such a threat!",
