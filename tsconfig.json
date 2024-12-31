@@ -1,19 +1,6 @@
 {
-    // this dependency causes an error on vercel despite it working fine on local builds, removing the dependency allows it to build but breaks icons and links
-    //"extends": "./.svelte-kit/tsconfig.json",
+    "extends": "./.svelte-kit/tsconfig.json",
     "compilerOptions": {
-  		"paths": {
-  			"$lib": [
-  				"../src/lib"
-  			],
-  			"$lib/*": [
-  				"../src/lib/*"
-  			]
-  		},
-  		"rootDirs": [
-  			"..",
-  			"./types"
-  		],
         "allowJs": true,
         "checkJs": true,
         "esModuleInterop": true,
@@ -21,7 +8,6 @@
         "resolveJsonModule": true,
         "skipLibCheck": true,
         "sourceMap": true,
-        "verbatimModuleSyntax": false,
         "strict": true
     }
     // Path aliases are handled by https://kit.svelte.dev/docs/configuration#alias
