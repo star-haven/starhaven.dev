@@ -1,6 +1,17 @@
 {
-    "extends": "./svelteconfig.json",
     "compilerOptions": {
+  		"paths": {
+  			"$lib": [
+  				"../src/lib"
+  			],
+  			"$lib/*": [
+  				"../src/lib/*"
+  			]
+  		},
+  		"rootDirs": [
+  			"..",
+  			"./types"
+  		],
         "allowJs": true,
         "checkJs": true,
         "esModuleInterop": true,
