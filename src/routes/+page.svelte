@@ -14,7 +14,11 @@
 
     import Diorama from "./Diorama.svelte";
 
-    export let data: PageData;
+    interface Props {
+        data: PageData;
+    }
+
+    let { data }: Props = $props();
 </script>
 
 <Diorama />

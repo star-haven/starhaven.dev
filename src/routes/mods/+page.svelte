@@ -5,9 +5,9 @@
     import { arr as mods } from "./mods";
 
 
-    let searchTerm = "";
+    let searchTerm = $state("");
 
-    let filteredMods: string | any[] = [];
+    let filteredMods: string | any[] = $state([]);
 
     const searchMods = () => {
         return filteredMods = mods.filter(mod => {
@@ -40,7 +40,7 @@
     <div class="search">
         Search
         <div class="search-bar">
-            <input type="text" id="search-bar-text" placeholder="Find a mod..." autocomplete="off" bind:value={searchTerm} on:input={searchMods}/>
+            <input type="text" id="search-bar-text" placeholder="Find a mod..." autocomplete="off" bind:value={searchTerm} oninput={searchMods}/>
         </div>
     </div>
 

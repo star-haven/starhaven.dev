@@ -1,8 +1,13 @@
-<script type="ts">
+<script lang="ts" type="ts">
     import "../app.css";
 
     // https://geoffrich.net/posts/page-transitions-1/
     import { preparePageTransition } from "$lib/page-transition";
+    interface Props {
+        children?: import('svelte').Snippet;
+    }
+
+    let { children }: Props = $props();
     preparePageTransition();
 </script>
 
@@ -20,7 +25,7 @@
 <a href="#top" class="sr-only focus:not-sr-only">Skip to content</a>
 
 <div class="flex min-h-screen flex-col text-gray-700">
-    <slot />
+    {@render children?.()}
 
     <footer class="max-w-prose p-6 text-xs opacity-50" style:--tag="footer">
         <p>

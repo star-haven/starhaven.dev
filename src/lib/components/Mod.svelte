@@ -1,24 +1,6 @@
-<script>
-    export let displayName;
-    export let internalName;
+<script lang="ts">
 
-    export let tagline;
-    export let description;
-    export let creators;
-    export let releaseDate;
-    export let lastUpdated;
-    export let version;
-    export let pageUrl;
-    export let sourceUrl;
-    export let iconUrl;
-    export let downloadUrl;
-    export let game;
-    export let console;
-    export let consoleCompatible;
-    export let recommendedEmulator;
-    export let modGroup;
 
-    export let color;
 
     import Img from "@zerodevx/svelte-img";
     import Icon from "svelte-awesome";
@@ -30,6 +12,26 @@
         faFileLines,
     } from "@fortawesome/free-solid-svg-icons";
     import { faBook, faHammer, faPlay } from "@fortawesome/free-solid-svg-icons";
+    let {
+        displayName,
+        internalName,
+        tagline,
+        description,
+        creators,
+        releaseDate,
+        lastUpdated,
+        version,
+        pageUrl,
+        sourceUrl,
+        iconUrl,
+        downloadUrl,
+        game,
+        console,
+        consoleCompatible,
+        recommendedEmulator,
+        modGroup,
+        color
+    } = $props();
 
 </script>
 

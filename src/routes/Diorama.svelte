@@ -48,7 +48,7 @@
         class="h-full w-full"
         allowtransparency
         allowfullscreen
-    />
+></iframe>
 </div>
 
 <style>

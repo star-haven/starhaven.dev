@@ -1,8 +1,19 @@
 <script lang="ts">
-    export let href: string;
-    export let discordCta: boolean = false;
-    export let playCtb: boolean = false;
-    export let modCtc: boolean = false;
+    interface Props {
+        href: string;
+        discordCta?: boolean;
+        playCtb?: boolean;
+        modCtc?: boolean;
+        children?: import('svelte').Snippet;
+    }
+
+    let {
+        href,
+        discordCta = false,
+        playCtb = false,
+        modCtc = false,
+        children
+    }: Props = $props();
 </script>
 
 <a
@@ -13,7 +24,7 @@
     class:ctb={playCtb}
     class:ctc={modCtc}
 >
-    <slot />
+    {@render children?.()}
 </a>
 
 <style>
