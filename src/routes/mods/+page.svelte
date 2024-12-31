@@ -7,18 +7,17 @@
 
     let filteredMods: string | any[] = $state([]);
 
-    // Ensure relative paths are resolved to absolute URLs, comment this out when building locally
-    mods.forEach(mod => {
-        if (mod.iconUrl.startsWith("/")) {
-            mod.iconUrl = `${window.location.origin}${mod.iconUrl}`;
-        }
-    });
-
     const searchMods = () => {
         return filteredMods = mods.filter(mod => {
             let modName = mod.displayName.toLowerCase();
             let modGame = mod.game.toLowerCase();
             let search = searchTerm.toLowerCase();
+            // Ensure relative paths are resolved to absolute URLs
+            mods.forEach(mod => {
+                if (mod.iconUrl.startsWith("/")) {
+                    mod.iconUrl = `${window.location.origin}${mod.iconUrl}`;
+                }
+            });
             return modName.includes(search) || modGame.includes(search);
         });
     };
