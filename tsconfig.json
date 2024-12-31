@@ -1,4 +1,6 @@
 {
+    // this dependency causes an error on vercel despite it working fine on local builds, removing the dependency allows it to build but breaks icons and links
+    //"extends": "./.svelte-kit/tsconfig.json",
     "compilerOptions": {
   		"paths": {
   			"$lib": [
