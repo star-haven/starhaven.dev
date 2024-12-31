@@ -256,9 +256,9 @@ export const obj: { [key: string]: Mod } = {
         releaseDate: "01/06/2023",
         lastUpdated: "08/05/2024",
         version: "2.1.1",
-        pageUrl: "https://snakemouth-den.itch.io/paper-mario-2",
+        pageUrl: "https://github.com/L5050/SPM-Hard-Mode",
         downloadUrl:
-            "https://github.com/L5050/SPM-Hard-Mode/releases/tag/V2.1.1",
+            "https://github.com/L5050/Flipside-Mod-Manager/blob/master/README.md#list-of-mods",
         sourceUrl: "https://github.com/L5050/SPM-Hard-Mode",
         iconUrl: "/src/routes/mods/assets/emptyspm.webp?run&lqip=0",
         tagline: "Super Difficult!",
@@ -882,7 +882,7 @@ export const obj: { [key: string]: Mod } = {
         description:
             "A mod that allows you to spawn and customize up to 5 blocks in nearly any room in the game.",
         game: "SPM",
-        console: "Wii",
+        console: "Turtle",
         consoleCompatible: true,
         recommendedEmulator: "Dolphin",
     },
@@ -1036,7 +1036,7 @@ export const obj: { [key: string]: Mod } = {
         sourceUrl: "https://github.com/L5050/Brobot-After-Some-Windex",
         pageUrl: "https://l5050.itch.io/brobot-after-some-windex",
         downloadUrl:
-            "https://github.com/L5050/Brobot-After-Some-Windex/releases/latest",
+            "https://github.com/L5050/Brobot-After-Some-Windex",
         iconUrl: "/src/routes/mods/assets/emptyspm.webp?run&lqip=0",
         tagline: "Fight Brobot in a New Adventure!",
         description:
@@ -1195,20 +1195,20 @@ export const obj: { [key: string]: Mod } = {
         modGroup: "BattleJam2024",
     },
     ramphase12: {
-        displayName: "Rubies and Magic: Phase 1 + 2",
+        displayName: "Hard Mode: Rubies and Magic",
         internalName: "ramphase12",
         creators: ["l5050"],
         releaseDate: "06/05/2024",
         lastUpdated: "06/05/2024",
         version: "1.0",
-        pageUrl: "https://l5050.itch.io/rubies-and-magic-phase-1",
-        downloadUrl: "https://github.com/L5050/Hard-Mode-Rubies-and-Magic",
+        pageUrl: "https://github.com/L5050/Hard-Mode-Rubies-and-Magic",
+        downloadUrl: "https://github.com/L5050/Flipside-Mod-Manager/blob/master/README.md#list-of-mods",
         sourceUrl:
             "https://github.com/L5050/Hard-Mode-Rubies-and-Magic/tree/master",
         iconUrl: "/src/routes/mods/assets/emptyspm.webp?run&lqip=0",
-        tagline: "A custom Count Bleck boss fight!",
+        tagline: "Hard Mode DLC!",
         description:
-            "The first phase of a major update to hard mode, specifically the custom Count Bleck boss fight I made to replace the 8-4 fight. You can explore the world of hard mode if you want, or fight Super Dimentio.",
+            "Was base hard mode still too easy for you? Try this DLC for hard mode with new rebalances and updates to boss AI.",
         game: "SPM",
         console: "Wii",
         consoleCompatible: true,
