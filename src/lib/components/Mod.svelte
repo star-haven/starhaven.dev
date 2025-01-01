@@ -35,7 +35,7 @@
 
 </script>
 
-<div class="mod-list-item flex flex-row gap-8 flex-wrap: wrap" style="--color: #fff">
+<div class="mod-list-item flex flex-wrap gap-8" style="--color: #fff">
     <div class="flex flex-col side-bar">
         <img src={iconUrl} alt="Mod Icon" class="mod-img"/>
         <div class="mod-release">{releaseDate}</div>
@@ -44,7 +44,7 @@
         <div class="mod-platform">{console} - <a href={"./games"}>{game}</a></div>
         <div class="mod-emu">{recommendedEmulator}</div>
     </div>
-    <div class="flex flex-col flex-grow">
+    <div class="flex flex-col content">
         <div class="flex flex-col">
             <div class="mod-name">
                 {#if pageUrl != null}<a href={pageUrl}>{displayName}</a>
@@ -70,7 +70,8 @@
         padding: 20px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         margin-bottom: 20px;
-        width: 90%;
+        height: fit-content;
+        width: fit-content;
         max-width: 500px;
     }
     .mod-list-item:hover{
@@ -96,8 +97,8 @@
 
     .mod-description {
         color: #666;
-        max-width:320px;
-        height:180px;
+        max-width: 100%;
+        height: fit-content;
         white-space: pre-line;
     }
 
@@ -112,13 +113,16 @@
     }
 
     .side-bar{
-        width:96px;
-        height:270px;
+        width:112px;
         box-sizing:border-box;
+        flex-shrink: 0;
     }
     .mod-creators{
         width:96px;
-        text-wrap:wrap;
         overflow-wrap:break-word;
+    }
+    .content {
+        flex: 1;
+        min-width: 0;
     }
 </style>
