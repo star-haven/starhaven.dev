@@ -32,12 +32,12 @@
     <nav class="flex w-full max-w-lg flex-col gap-4">
         <div class="flex items-center justify-center gap-4">
             <LinkButton href="/mods" playCtb>
-                <Icon data={faPlay} scale={2.5} class="mr-2" />
-                Play Mods!
+                <Icon data={faPlay} scale={2} class="mr-4" />
+                Play mods!
             </LinkButton>
             <LinkButton href="https://docs.starhaven.dev" modCtc>
-                <Icon data={faBook} scale={2.5} class="mr-2" />
-                Make Mods!
+                <Icon data={faBook} scale={2} class="mr-4" />
+                Make mods!
             </LinkButton>
         </div>
         <div class="flex items-center justify-around gap-4">
