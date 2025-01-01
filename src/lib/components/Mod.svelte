@@ -35,7 +35,7 @@
 
 </script>
 
-<div class="mod-list-item flex flex-row gap-8" style="--color: #fff">
+<div class="mod-list-item flex flex-row gap-8 flex-wrap: wrap" style="--color: #fff">
     <div class="flex flex-col side-bar">
         <img src={iconUrl} alt="Mod Icon" class="mod-img"/>
         <div class="mod-release">{releaseDate}</div>
@@ -44,7 +44,7 @@
         <div class="mod-platform">{console} - <a href={"./games"}>{game}</a></div>
         <div class="mod-emu">{recommendedEmulator}</div>
     </div>
-    <div class="flex flex-col">
+    <div class="flex flex-col flex-grow">
         <div class="flex flex-col">
             <div class="mod-name">
                 {#if pageUrl != null}<a href={pageUrl}>{displayName}</a>
