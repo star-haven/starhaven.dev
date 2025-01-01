@@ -1,19 +1,21 @@
 <script>
+    import { run } from 'svelte/legacy';
+
     import Nav from "$lib/components/Nav.svelte";
     import { Icon } from "svelte-awesome";
     import SubmitButton from "./SubmitButton.svelte";
     import { faHammer } from "@fortawesome/free-solid-svg-icons";
 
 
-    var sourceData = null;
-    var patchData = null;
+    var sourceData = $state(null);
+    var patchData = $state(null);
     var saveAsName = '';
 
-    let domInputRom;
-    let domInputPatch;
-    let domInputSaveAs;
-    let domInputApply;
-    let domInputSkipChecksums;
+    let domInputRom = $state();
+    let domInputPatch = $state();
+    let domInputSaveAs = $state();
+    let domInputApply = $state();
+    let domInputSkipChecksums = $state();
 
     function attachBinaryInput(elem, onloadend)
     {
@@ -40,23 +42,6 @@
         }
     }
 
-    $: attachBinaryInput(domInputRom, function(result) {
-        sourceData = result;
-        autoName();
-        setApplyButtonState();
-    })
-    $: attachBinaryInput(domInputPatch, function(result) {
-        patchData = result;
-        autoName();
-        setApplyButtonState();
-    })
-    $: if (domInputSaveAs) {
-        domInputSaveAs.onchange = domInputSaveAs.onkeydown = () => setApplyButtonState();
-    }
-    $: if (domInputApply) {
-        domInputApply.onclick = () => runPatcher();
-        domInputApply.oncontextmenu = () => runPatcher({debug: true});
-    }
 
     function isReady()
     {
@@ -183,6 +168,31 @@
             document.body.removeChild(a);
         }
     }
+    run(() => {
+        attachBinaryInput(domInputRom, function(result) {
+            sourceData = result;
+            autoName();
+            setApplyButtonState();
+        })
+    });
+    run(() => {
+        attachBinaryInput(domInputPatch, function(result) {
+            patchData = result;
+            autoName();
+            setApplyButtonState();
+        })
+    });
+    run(() => {
+        if (domInputSaveAs) {
+            domInputSaveAs.onchange = domInputSaveAs.onkeydown = () => setApplyButtonState();
+        }
+    });
+    run(() => {
+        if (domInputApply) {
+            domInputApply.onclick = () => runPatcher();
+            domInputApply.oncontextmenu = () => runPatcher({debug: true});
+        }
+    });
 </script>
 
 <Nav />

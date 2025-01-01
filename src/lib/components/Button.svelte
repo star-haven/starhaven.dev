@@ -2,15 +2,20 @@
 
 <script lang="ts">
     import { createEventDispatcher } from "svelte";
+    interface Props {
+        children?: import('svelte').Snippet;
+    }
+
+    let { children }: Props = $props();
 
     const dispatch = createEventDispatcher<{ click: {} }>();
 </script>
 
 <button
-    on:click={() => dispatch("click")}
+    onclick={() => dispatch("click")}
     class="button align-center inline-flex select-none items-center rounded-md bg-gray-700 px-5 py-1 text-lg text-white shadow-lg hover:bg-gray-600"
 >
-    <slot />
+    {@render children?.()}
 </button>
 
 <style>

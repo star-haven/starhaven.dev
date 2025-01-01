@@ -1,18 +1,22 @@
 <script lang="ts">
     import Breadcrumbs from "$lib/components/Breadcrumbs.svelte";
-    const mods = [
-        {
-            name: "Paper Mario: Master Quest",
-            description:
-                'Considered "The Dark Souls of Paper Mario", Master Quest is incredibly difficult. It was designed with elite challenge runners in mind, and unless you have extensive knowledge of Paper Mario, you may struggle with much of the content.',
-            link: "https://github.com/Brotenko/PMMasterQuest",
-        },
-        {
-            name: "Paper Mario Mod 2",
-            description: "This is a description of Mod 2.",
-            link: "#",
-        },
-    ];
+    import Mod from "$lib/components/Mod.svelte";
+    import { arr as mods } from "./mods";
+
+    let searchTerm = $state("");
+
+    let filteredMods: string | any[] = $state([]);
+
+    const searchMods = () => {
+        return filteredMods = mods.filter(mod => {
+            let modName = mod.displayName.toLowerCase();
+            let modGame = mod.game.toLowerCase();
+            let search = searchTerm.toLowerCase();
+            return modName.includes(search) || modGame.includes(search);
+        });
+    };
+
+    mods.sort();
 </script>
 
 <Breadcrumbs />
@@ -30,51 +34,106 @@
         </p>
     </header>
 
-    <main class="self-stretch">
-        <ul class="mod-list">
-            {#each mods as mod (mod.name)}
-                <li class="mod-list-item">
-                    <div class="mod-name">
-                        <a href={mod.link}>{mod.name}</a>
-                    </div>
-                    <div class="mod-description">{mod.description}</div>
-                </li>
-            {/each}
-        </ul>
-    </main>
+    <div class="search">
+        Search
+        <div class="search-bar">
+            <input type="text" id="search-bar-text" placeholder="Find a mod..." autocomplete="off" bind:value={searchTerm} oninput={searchMods}/>
+        </div>
+    </div>
+
+    <div class="mod-browser flex flex-col gap-4">
+        <div class="mod-list gap-8">
+            {#if searchTerm == ""}
+                {#each mods as {displayName, internalName, tagline, description, creators, releaseDate, lastUpdated, version, pageUrl, sourceUrl, iconUrl, downloadUrl, game, console, consoleCompatible, recommendedEmulator,modGroup,color}}
+                    <Mod
+                    {displayName}
+                    {internalName}
+                    {tagline}
+                    {description}
+                    {creators}
+                    {releaseDate}
+                    {lastUpdated}
+                    {version}
+                    {pageUrl}
+                    {sourceUrl}
+                    {iconUrl}
+                    {downloadUrl}
+                    {game}
+                    {console}
+                    {consoleCompatible}
+                    {recommendedEmulator}
+                    {modGroup}
+                    {color}
+                    />
+                {/each}
+
+            {:else if filteredMods.length === 0}
+                No mods found!
+            {:else}
+                {#each filteredMods as {displayName, internalName, tagline, description, creators, releaseDate, lastUpdated, version, pageUrl, sourceUrl, iconUrl, downloadUrl, game, console, consoleCompatible, recommendedEmulator,modGroup,color}}
+                    <Mod
+                    {displayName}
+                    {internalName}
+                    {tagline}
+                    {description}
+                    {creators}
+                    {releaseDate}
+                    {lastUpdated}
+                    {version}
+                    {pageUrl}
+                    {sourceUrl}
+                    {iconUrl}
+                    {downloadUrl}
+                    {game}
+                    {console}
+                    {consoleCompatible}
+                    {recommendedEmulator}
+                    {modGroup}
+                    {color}
+                    />
+                {/each}
+            {/if}
+        </div>
+    </div>
 </div>
 
 <style>
+    .search-bar{
+        background-color: #ddd;
+        border-radius: 10px;
+        padding: 0px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 500px;
+        align-self:center;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+    }
+    #search-bar-text{
+        background-color: #ddd;
+        padding:20px;
+    }
+    #search-bar-text:focus{
+        outline:none;
+    }
+    .search{
+        background-color:none;
+        padding:none;
+        box-shadow:none;
+        margin:none;
+        border-radius:none;
+        align-self:center;
+        width:80%;
+    }
     .mod-list {
+        width:90vw;
         list-style: none;
         padding: 0;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .mod-list-item {
-        background-color: #fff;
-        border-radius: 10px;
-        padding: 20px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        margin-bottom: 20px;
-        width: 80%;
-        max-width: 500px;
-    }
-
-    .mod-name {
-        font-weight: bold;
-        color: #007bff;
-        margin-bottom: 10px;
-    }
-
-    .mod-name a {
-        text-decoration: none;
-        color: inherit;
-    }
-
-    .mod-description {
-        color: #666;
+        flex-direction: row;
+        flex-wrap:wrap;
+        align-items: flex-start;
+        justify-content:center;
     }
 </style>

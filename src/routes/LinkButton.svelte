@@ -1,6 +1,19 @@
 <script lang="ts">
-    export let href: string;
-    export let discordCta: boolean = false;
+    interface Props {
+        href: string;
+        discordCta?: boolean;
+        playCtb?: boolean;
+        modCtc?: boolean;
+        children?: import('svelte').Snippet;
+    }
+
+    let {
+        href,
+        discordCta = false,
+        playCtb = false,
+        modCtc = false,
+        children
+    }: Props = $props();
 </script>
 
 <a
@@ -8,8 +21,10 @@
     class="button align-center inline-flex select-none items-center rounded-md bg-gray-700 px-5 py-1 text-lg text-white shadow-lg hover:bg-gray-600"
     class:cta={discordCta}
     class:text-2xl={discordCta}
+    class:ctb={playCtb}
+    class:ctc={modCtc}
 >
-    <slot />
+    {@render children?.()}
 </a>
 
 <style>
@@ -75,6 +90,30 @@
         &:hover,
         &:focus {
             background-color: #6873f3;
+        }
+    }
+    .ctb {
+        padding: 0.75rem 1.5rem;
+        border-width: 2px;
+        background-color: #f25858;
+
+        --button-hover-scale: 1.03;
+
+        &:hover,
+        &:focus {
+            background-color: #f36868;
+        }
+    }
+    .ctc {
+        padding: 0.75rem 1.5rem;
+        border-width: 2px;
+        background-color: #2abb77;
+
+        --button-hover-scale: 1.03;
+
+        &:hover,
+        &:focus {
+            background-color: #2dd882;
         }
     }
 </style>

@@ -1,6 +1,10 @@
 <script lang="ts">
-    export let value: string;
-    export let disabled: boolean = false;
+    interface Props {
+        value: string;
+        disabled?: boolean;
+    }
+
+    let { value, disabled = false }: Props = $props();
 </script>
 
 <input
