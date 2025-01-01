@@ -546,7 +546,7 @@ export const obj: { [key: string]: Mod } = {
         version: "1.0",
         downloadUrl: "https://gamebanana.com/mods/341277",
         pageUrl: "https://gamebanana.com/mods/341277",
-        iconUrl: "assets/emptytok.webp?run&lqip=0",
+        iconUrl: "assets/tokphotohelper.webp?run&lqip=0",
         tagline: "Camera Tool",
         description:
             "Removes the HUD (and optionally Mario) for beautiful screenshots",
@@ -1136,7 +1136,7 @@ export const obj: { [key: string]: Mod } = {
         pageUrl: "https://darxoon.itch.io/paper-mario-vs-luigi",
         downloadUrl: "https://darxoon.itch.io/paper-mario-vs-luigi",
         sourceUrl: "https://github.com/Darxoon/PMvL",
-        iconUrl: "assets/empty.webp?run&lqip=0",
+        iconUrl: "assets/pmvluigi.webp?run&lqip=0",
         tagline: "Mario fights against... Luigi?",
         description:
             "Mario from the hit game Paper Mario fights against..... his brother Luigi?\n\nYou will never figure out why!",
