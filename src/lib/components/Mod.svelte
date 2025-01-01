@@ -74,6 +74,12 @@
         width: fit-content;
         max-width: 500px;
     }
+
+    @media screen and (max-width: 540px){
+        .mod-list-item{
+            width: 96vw;
+        }
+    }
     .mod-list-item:hover{
         background-color: color-mix(in srgb, #fff 40%, var(--color));
         transition-duration:0.1s;
