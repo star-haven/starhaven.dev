@@ -111,6 +111,7 @@
     .mod-links{
         margin-top:auto;
         width:320px;
+        align-self:end;
     }
 
     @media screen and (max-width: 540px){
