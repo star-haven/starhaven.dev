@@ -993,7 +993,7 @@ export const obj: { [key: string]: Mod } = {
         downloadUrl:
             "https://shyblookster137.itch.io/pm-five-letters-until-doom",
         sourceUrl: "https://github.com/Den1604/space-jam",
-        iconUrl: "assets/empty.webp?run&lqip=0",
+        iconUrl: "assets/5LudModBrowserIcon.webp?run&lqip=0",
         tagline: "Deliver some mail on time.",
         description:
             "Play as Mario and aid Parakarry in this cosmic adventure on a letter delivery escapade which trancends space and... space? (Time travel has not yet been invented, sorry.)",
