@@ -1231,6 +1231,25 @@ export const obj: { [key: string]: Mod } = {
         recommendedEmulator: "Ares",
         modGroup: "BattleJam2024",
     },
+    mariohates2025: {
+        displayName: "Mario HATES 2025",
+        internalName: "mariohates2025",
+        creators: ["Darxoon", "Den", "Wrymouth"],
+        releaseDate: "31/12/2024",
+        lastUpdated: "31/12/2024",
+        version: "1.0",
+        pageUrl: "https://darxoon.itch.io/mario-hates-2025",
+        downloadUrl: "https://darxoon.itch.io/mario-hates-2025",
+        sourceUrl: "https://github.com/Wrymouth/mario-hates-2025",
+        iconUrl: "assets/mariohates.webp?run&lqip=0",
+        tagline: "Help Mario to destroy the new year 2025!",
+        description:
+            "Help Mario in his mission to destroy 2025 so the new year will never come!\n\nA Paper Mario mod made by Den, Wrymouth and Darxoon for the new year celebration 2025. Enjoy :)",
+        game: "PM64",
+        console: "N64",
+        consoleCompatible: true,
+        recommendedEmulator: "Ares",
+    },
 };
 
 export const arr = Object.values(obj);
