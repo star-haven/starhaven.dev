@@ -1,14 +1,29 @@
-<script lang="ts" type="ts">
+<script lang="ts">
     import "../app.css";
 
     // https://geoffrich.net/posts/page-transitions-1/
     import { preparePageTransition } from "$lib/page-transition";
+    import { afterNavigate } from '$app/navigation';
+    import type { NavigationTarget } from "@sveltejs/kit";
+    
     interface Props {
         children?: import('svelte').Snippet;
     }
 
     let { children }: Props = $props();
     preparePageTransition();
+
+    afterNavigate(({ to }: { to: NavigationTarget | null }) => {
+        if (!to) return;
+
+        const path: string = to.url.pathname;
+
+        let pageName: string = path.slice(path.lastIndexOf('/') + 1);
+        if (!pageName) pageName = 'Star Haven';
+        else pageName = pageName.charAt(0).toUpperCase() + pageName.slice(1).toLowerCase();
+        
+        document.title = pageName;
+    });
 </script>
 
 <svelte:head>

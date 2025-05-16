@@ -1,7 +1,9 @@
 const config = {
     plugins: [
-        require("@tailwindcss/nesting"),
-        require("tailwindcss"),
+        require('postcss-import'),
+        require('@tailwindcss/postcss')({
+            config: './tailwind.config.cjs', 
+        }),
         require("autoprefixer"),
     ],
 };

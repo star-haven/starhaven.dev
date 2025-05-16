@@ -4,5 +4,19 @@
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
     "editor.insertSpaces": true,
-    "editor.tabSize": 4
+    "editor.tabSize": 4,
+    "css.validate": false,
+    "tailwindCSS.includeLanguages": {
+        "plaintext": "html",
+        "javascript": "javascript",
+        "typescript": "typescript",
+        "svelte": "html"
+    },
+    "tailwindCSS.experimental.classRegex": [
+        "class:\\s*\"([^\"]*)\"",
+        "class:\\s*'([^']*)'",
+        "class:\\s*`([^`]*)`",
+        "className=\\{?`([^`]*)`\\}?",
+        "class=\\{?`([^`]*)`\\}?"
+    ]
 }
