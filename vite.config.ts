@@ -1,12 +1,14 @@
 import { sveltekit } from "@sveltejs/kit/vite";
 import { defineConfig } from "vitest/config";
 import { SvelteKitPWA } from "@vite-pwa/sveltekit";
-import { imagetools } from "@zerodevx/svelte-img/vite";
+import { enhancedImages } from '@sveltejs/enhanced-img';
+import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
     plugins: [
+        tailwindcss(),
+        enhancedImages(),
         sveltekit(),
-        imagetools(),
         SvelteKitPWA({
             registerType: "autoUpdate",
             workbox: {
@@ -14,6 +16,11 @@ export default defineConfig({
             },
         }),
     ],
+    server: {
+        watch: {
+            usePolling: true,
+        },
+    },
     test: {
         include: ["src/**/*.{test,spec}.{js,ts}"],
     },
