@@ -4,19 +4,37 @@
     import { arr as mods } from "./mods";
 
     let searchTerm = $state("");
-
     let filteredMods: string | any[] = $state([]);
 
     const searchMods = () => {
-        return filteredMods = mods.filter(mod => {
-            let modName = mod.displayName.toLowerCase();
-            let modGame = mod.game.toLowerCase();
-            let search = searchTerm.toLowerCase();
-            return modName.includes(search) || modGame.includes(search);
+        const query = searchTerm.toLowerCase().trim();
+        if (!query) {
+            filteredMods = mods;
+            return;
+        }
+
+        filteredMods = mods.filter((mod) => {
+            const valuesToSearch: string[] = [
+                mod.displayName,
+                mod.internalName,
+                mod.tagline,
+                mod.description,
+                mod.version,
+                mod.releaseDate,
+                mod.lastUpdated,
+                mod.downloadUrl,
+                mod.game,
+                mod.console,
+                mod.recommendedEmulator,
+                ...mod.creators
+            ]
+                .map(value => value.toLowerCase());
+
+            return valuesToSearch.some(field => field.includes(query));
         });
     };
 
-    mods.sort();
+    mods.sort((a, b) => a.displayName.localeCompare(b.displayName));
 </script>
 
 <Breadcrumbs />
