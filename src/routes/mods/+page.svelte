@@ -37,7 +37,7 @@
     mods.sort((a, b) => a.displayName.localeCompare(b.displayName));
 </script>
 
-<Breadcrumbs />
+<Breadcrumbs pageTitle="Mods"/>
 
 <div
     class="flex w-full max-w-xl grow flex-col items-center gap-16 self-center p-4"
