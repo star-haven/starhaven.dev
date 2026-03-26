@@ -1,5 +1,6 @@
 <script>
     import logotype from "$lib/assets/logotype.png?run&lqip=0";
+    let props = $props();
 </script>
 <nav
     aria-label="Breadcrumb"
@@ -16,7 +17,7 @@
         <!-- TODO: calculate this dynamically -->
         <li class="inline-block p-2">
             <a href="#top" aria-current="page" class="font-semibold text-black"
-                >{document.title}</a
+                >{props.pageTitle}</a
             >
         </li>
     </ol>

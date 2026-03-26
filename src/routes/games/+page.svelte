@@ -5,7 +5,7 @@
     import Img from "@zerodevx/svelte-img";
 </script>
 
-<Breadcrumbs />
+<Breadcrumbs pageTitle="Games"/>
 
 <main class="w-full p-9">
     <ol class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
